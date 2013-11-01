@@ -1,452 +1,103 @@
-<!DOCTYPE html>
-<html class="csstransforms no-csstransforms3d csstransitions">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+---
+layout: app
+---
 
-<meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale = 1">
-<meta charset="utf-8">
-<title>ActiveBridge</title>
-<meta name="robots" content="index,follow,noodp,noydir">
-<meta name="description" content="">
-<meta name="author" content="">
-<meta name="keywords" content="software development, web application development, software outsourcing, application development, software development company, software development services, Ruby on Rails development, software development outsourcing, software outsourcing company, software outsourcing services, web application development company, web application development outsource, Ruby on Rails development company, Ruby on Rails team">
-<meta name="description" content="">
-
-<link rel="stylesheet" href="css/default.css" type="text/css" media="screen">
-<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-<script type="text/javascript" src="js/default.js"></script>
-
-</head>
-<body>
-
-<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-  <div class="overlay-background home-padding">
-    <div class="container clearfix">
-      <div class="grid_12">
-        <div class="left-border"></div>
-        <div class="home-text">Hello, we are</div>
-        <div class="right-border"></div>
-        <h1>ActiveBridge</h1>
+<div class='bg'></div>
+<div id='home' class='slide'>
+  <div class='overlay-bg'>
+    <div class='container clearfix'>
+      <div class='grid_12'>
+        <div class='home-text'>Hello, we are</div>
+        <h1>Active Bridge</h1>
         <h2>Ruby on Rails Developers</h2>
-        <div class="left-border"></div>
-        <div class="block-button-top">
-          <a class="button button-top" title="" data-slide="2"><span class="fontawesome-icon icon-chevron-sign-down"></span></a>
+        <div class='bordered'>
+          <a class='icon-down-open button' href='#about'></a>
         </div>
-        <div class="right-border"></div>
-        <div class="clear"></div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="menu">
-  <div class="container clearfix">
-    <a id="logo" class="left" href=""></a>
-    <div id="nav" class="right">
-      <ul class="navigation">
-        <li data-slide="1" class="active">Home</li>
-        <li data-slide="2">About</li>
-        <li data-slide="4">Services</li>
-        <li data-slide="11">Team</li>
-        <li data-slide="6">Our Works</li>
-        <li data-slide="10">Contacts</li>
+<div class='menu' id='navigation'>
+  <ul class='navigation right' id='nav'>
+    <li class='active'><a href='#home'>Home</a></li>
+    <li><a href='#about'>About</a></li>
+    <li><a href='#services'>Services</a></li>
+    <li><a href='#team'>Team</a></li>
+    <li><a href='#contacts'>Contacts</a></li>
+  </ul>
+</div>
+
+<div id='about' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=0 %}
+    <div class='grid_8'>
+      <h4>Why Active Bridge?</h4>
+      <p>
+        We never stop improving our services, including development methodologies,
+        engineering practices and management techniques to enhance our team’s capabilities and increase customer satisfaction.
+      </p>
+      <ul class='about-list'>
+        {% for property in site.data.properties %}
+        <li>
+          <i class='fontawesome-icon icon-ok'></i>
+          {{ property.text }}
+        </li>
+        {% endfor %}
       </ul>
-      <div class="clear"></div>
     </div>
-  </div>
-</div>
-
-<div class="slide" id="slide2" data-slide="2">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <h1>About<span class="heading-arrow">}</span></h1>
-      <div class="heading-description">
-        ActiveBridge is an intentionally small team of highly technical Ruby on Rails developers who can develop systems tailored to meet all your business needs.
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div id="content">
-      <div class="grid_8">
-        <h4>Why ActiveBridge?</h4>
-        <p>We never stop improving our services, including development methodologies, engineering practices and management techniques to enhance our team’s capabilities and increase customer satisfaction.</p>
-        <ul class="about-list">
-          <li>
-          <i class="fontawesome-icon icon-ok"></i>
-          Availability of top-level IT specialists.
-          </li>
-          <li>
-          <i class="fontawesome-icon icon-ok"></i>
-          Team management solutions are key to keeping projects on track and workers on task.
-          </li>
-          <li>
-          <i class="fontawesome-icon icon-ok"></i>
-          We care about making every one of our products run fast, making them easily scalable and making the deployment process run smoothly with no server interruptions.
-          </li>
-          <li>
-          <i class="fontawesome-icon icon-ok"></i>
-          We implement the best industry standards and practices, like SCRUM or Agile, depending on the project size and complexity.
-          </li>
-          <li>
-          <i class="fontawesome-icon icon-ok"></i>
-          Hourly wages give you the control of how much you are paying for the work completed by employees.
-          </li>
-        </ul>
-      </div>
-      <div class="grid_4 omega">
-        <h4>Our Skills</h4>
-        <ul id="skills">
-          <li>Ruby On Rails</li>
-          <li class="progress progress-striped active">
-          <div class="bar" style="width: 99%"><b>99%</b></div>
-          </li>
-          <li>Javascript / jQuery / CoffeeScript</li>
-          <li class="progress progress-striped active">
-          <div class="bar" style="width: 88%"><b>88%</b></div>
-          </li>
-          <li>HTML / Haml / Slim</li>
-          <li class="progress progress-striped active">
-          <div class="bar" style="width: 95%"><b>95%</b></div>
-          </li>
-          <li>CSS / SCSS / SASS / LESS / Compass</li>
-          <li class="progress progress-striped active">
-          <div class="bar" style="width: 90%"><b>90%</b></div>
-          </li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-</div>
-
-<div class="split-slide" id="slide3">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <div class="left-border"></div>
-      <div class="block-button-top">
-        <a class="button button-top" title="" data-slide="2"><span class="fontawesome-icon icon-chevron-sign-up"></span></a>
-      </div>
-      <div class="right-border"></div>
-    </div>
-  </div>
-</div>
-
-<div class="slide" id="slide4" data-slide="4">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <h1>Services<span class="heading-arrow">}</span></h1>
-      <div class="heading-description">
-        ActiveBridge is a Web development team that always keeps its services up to date with the latest market trends, providing customers all over the world with best-of-class, easily extensible Internet products.
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="grid_12">
-      <div class="grid_4">
-        <div class="services-block">
-          <ul class="icon">
-            <li class="fontawesome-icon large circle icon-code"></li>
-            <li class="fontawesome-icon large circle-deg icon-code"></li>
-          </ul>
-          <p>Web development</p>
-          <div class="text">Web development is based on <b>Ruby on Rails</b> technology. Having a lot of experience and broad knowledge we deliver software so that you have it on time and that it fits best to project's requirements</div>
-        </div>
-      </div>
-      <div class="grid_4">
-        <div class="services-block">
-          <ul class="icon">
-            <li class="fontawesome-icon large circle icon-bar-chart"></li>
-            <li class="fontawesome-icon large circle-deg icon-bar-chart"></li>
-          </ul>
-          <p>Ruby on Rails Code Audit</p>
-          <div class="text">We provide our clients with very careful and solid process of auditing <b>Ruby on Rails</b> Code. We can be your another set of eyes and deliver you necessary feedback at every stage of your project.</div>
-        </div>
-      </div>
-      <div class="grid_4 omega">
-        <div class="services-block" href="./page.html">
-          <ul class="icon">
-            <li class="fontawesome-icon large circle icon-dashboard"></li>
-            <li class="fontawesome-icon large circle-deg icon-dashboard"></li>
-          </ul>
-          <p>Maintanance & Support</p>
-          <div class="text"><b>ActiveBridge</b> helps software providers meet the challenge of ongoing software maintenance and support with a range of services designed to substantially lower their maintenance costs and ensure timely response.</div>
-        </div>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-</div>
-
-<div class="split-slide" id="slide5" data-slide="5">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <div class="left-border"></div>
-      <div class="block-button-top">
-        <a class="button button-top fontawesome-icon icon-chevron-sign-up" title="" data-slide="4"></a>
-      </div>
-      <div class="right-border"></div>
-    </div>
-  </div>
-</div>
-
-<div class="slide" id="slide11" data-slide="11">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <h1>Our Team<span class="heading-arrow">}</span></h1>
-      <div class="heading-description">
-        ... has the skills, experience and insight to meet your design and technical challenges.
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="clear"></div>
-    <div class="grid_2 team">
-      <a href="http://careers.stackoverflow.com/alexeylukin" class="member-img" target="_blank"></a>
-      <h4>Alexey</h4>
-      <p>RoR Coder</p>
-    </div>
-    <div class="grid_2 team">
-      <a id="pasha" href="http://careers.stackoverflow.com/pavelmihailovskiy" class="member-img" target="_blank"></a>
-      <h4>Pasha</h4>
-      <p>RoR Developer</p>
-    </div>
-    <div class="grid_2 team">
-      <a id="anton" href="http://careers.stackoverflow.com/zimin" class="member-img" target="_blank"></a>
-      <h4>Anton</h4>
-      <p>RoR Developer</p>
-    </div>
-    <div class="grid_2 team">
-      <a id="jeka" href="http://careers.stackoverflow.com/eugenekorpan" class="member-img" target="_blank"></a>
-      <h4>Eugene</h4>
-      <p>CTO</p>
-    </div>
-    <div class="grid_2 team">
-      <a id="ruslan" href="http://careers.stackoverflow.com/ruslanm" class="member-img" target="_blank"></a>
-      <h4>Ruslan</h4>
-      <p>RoR Developer</p>
-    </div>
-    <div class="grid_2 team omega">
-      <a id="alex" href="http://careers.stackoverflow.com/galulex" class="member-img" target="_blank"></a>
-      <h4>Alex</h4>
-      <p>RoR Coder</p>
-    </div>
-    <div class="clear"></div>
-  </div>
-</div>
-
-<div class="split-slide" id="slide7">
-    <div class="container clearfix">
-      <div class="grid_12">
-        <div class="left-border"></div>
-        <div class="block-button-top">
-          <a class="button button-top fontawesome-icon icon-chevron-sign-up" title="" data-slide="11"></a>
-        </div>
-        <div class="right-border"></div>
-      </div>
-    </div>
-</div>
-
-<div class="slide" id="slide6" data-slide="6">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <h1>Our Works<span class="heading-arrow">}</span></h1>
-      <div class="heading-description">
-        The best way to demonstrate our expertise is to show you our work. In the Our Works Section you will find brief descriptions of some projects selected from the growing list of our web development projects, to give you a better idea about our experience and expertise.
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div id="contenet">
-      <div class="clear"></div>
-      <div class="overflow-hidden">
-        <div class="projects-list">
-          <div class="projects isotope" style="position: relative; overflow: hidden; height: 442px;">
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="scoutondemand">
-                <div class="item-description">
-                  <p>Scout OnDemand</p>
-                  Engagement Management System.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/scoutondemand.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://www.scoutondemand.com" target="_blank"></a>
-              </div>
-            </div>
-
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="wingsplay">
-                <div class="item-description">
-                  <p>Wingsplay</p>
-                  The platform that connects influential social media users with the best viral video advertisers.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/wingsplay.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://wingsplay.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="alcatel">
-                <div class="item-description">
-                  <p>Alcatel AAPP Factory</p>
-                  Portal dedicated to the community of developers around Alcatel-Lucent enterprise products and solutions.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/alcatel.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://developer-enterprise.alcatel-lucent.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="vmware">
-                <div class="item-description">
-                  <p>VMware</p>
-                  Application enables VMware partners to market virtual appliances.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/vmware.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://solutionexchange.vmware.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="avaya">
-                <div class="item-description">
-                  <p>Avaya DevConnect</p>
-                  Marketplace where you can discover and explore applications and services from Avaya Partners.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/avaya.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://www.devconnectmarketplace.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="cisco">
-                <div class="item-description">
-                  <p>Cisco Services</p>
-                  Marketplace dedicated to the community of developers, customers and partners around Cisco services.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/cisco.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://marketplace.cisco.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="beanstock">
-                <div class="item-description">
-                  <p>Beanstock</p>
-                  Cloud based yield management system that aggregates demand from every available source.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/beanstock.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://marketplace.cisco.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="appzone">
-                <div class="item-description">
-                  <p>Enterprise AppZone</p>
-                  Cloud based solution that allows corporate IT to control management of applications to end-user devices.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/appzone.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://www.partnerpedia.com/products/enterprise-appzone" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="citrix">
-                <div class="item-description">
-                  <p>Citrix Ready</p>
-                  An end-to-end partner program that showcases and recommends third party products, solutions and services.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/citrix.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://citrix.com/ready" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="smartbiz">
-                <div class="item-description">
-                  <p>SmartBiz</p>
-                  App to reduce the typical bank lending process from as much as 90 days to only 2 to 5 days
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/smartbiz.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://www.smartbizloans.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="myooma">
-                <div class="item-description">
-                  <p>My Ooma</p>
-                  Aenean sagitis tortor quis nisl aliquet <br>at rutrum nisi posuere.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/myooma.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://my.ooma.com" target="_blank"></a>
-              </div>
-            </div>
-            <div class="image-block element isotope-item">
-              <div class="image-hover">
-                <img class="craiggers">
-                <div class="item-description">
-                  <p>Craiggers</p>
-                  Aenean sagitis tortor quis nisl aliquet <br>at rutrum nisi posuere.
-                </div>
-                <a class="zoom fontawesome-icon icon-zoom-in" href="images/craiggers.png" rel="lazybox"></a>
-                <a class="link fontawesome-icon icon-link" href="http://craiggers.com" target="_blank"></a>
-              </div>
-            </div>
+    <div class='grid_4 omega'>
+      <h4>Our Skills</h4>
+      <ul id='skills'>
+        {% for skill in site.data.skills %}
+        <li>{{ skill.title }}</li>
+        <li class='progress'>
+          <div class='bar' style="width: {{ skill.value }}%">
+            <b>{{ skill.value }}</b>
           </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="split-slide" id="slide13">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <div class="left-border"></div>
-      <div class="block-button-top">
-        <a class="button button-top fontawesome-icon icon-chevron-sign-up" title="" data-slide="6"></a>
-      </div>
-      <div class="right-border"></div>
-    </div>
-  </div>
-</div>
-
-<div class="slide" id="slide10" data-slide="10">
-  <div class="container clearfix">
-    <div class="grid_12">
-      <h1>Contacts<span class="heading-arrow">}</span></h1>
-      <div class="heading-description">
-        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed quia non numquam. -->
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="grid_12">
-      <h4>Contact Us</h4>
-      <p>Would you like to learn more about ActiveBridge, our services and how we can assist you with your software development? We will help you find the answers you are looking for when you contact ActiveBridge. Please do not hesitate to contact us with any questions you may have regarding ActiveBridge’s services. </p>
-      <ul class="contact-info">
-        <li class="fontawesome-icon icon-phone"><span> +38 097 753 5731</span></li>
-        <li class="fontawesome-icon icon-map-marker"><span> Cherkassy, Ukraine</span></li>
-        <li class="fontawesome-icon icon-envelope"><span> korpan.eugene@gmail.com</span></li>
+        </li>
+        {% endfor %}
       </ul>
     </div>
-    <div class="grid_12"></div>
-    <div class="clear"></div>
   </div>
 </div>
 
-<div id="footer">
-  <div class="container clearfix">
-    <div id="footer-icons">
-      <div class="footer-social-icons">
-        <a class="fontawesome-icon icon-github" href="https://github.com/activebridge"></a>
-        <a class="fontawesome-icon icon-linkedin" href=""></a>
-      </div>
+{% include spliter.html slide="#about" %}
+
+<div id='services' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=1 %}
+
+    {% for service in site.data.services %}
+      {% include service.html service=service %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include spliter.html slide="#services" %}
+
+<div id='team' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=2 %}
+
+    {% for member in site.data.members %}
+    {% include member.html member=member %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include spliter.html slide="#team" %}
+
+<div id='contacts' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=3 %}
+    <div class='grid_12'>
+      <h4>Contact Us</h4>
+      <ul class='contact-info'>
+        <li class='icon icon-phone-squared'> +38 097 753 5731</li>
+        <li class='icon icon-mail-alt'> eugene@active-bridge.com</li>
+        <li class='icon icon-location'> Cherkassy, Ukraine</li>
+      </ul>
     </div>
-    <div class="copyright">ActiveBridge © 2013. All Rights Reserved.</div>
-    <div id="button-top-footer"><a class="button fontawesome-icon icon-double-angle-up" title="" data-slide="1"></a></div>
   </div>
 </div>
-<div id="dummy-element" style="display:none"></div>
-
-</body>
-</html>

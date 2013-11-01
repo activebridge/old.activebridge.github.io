@@ -1,0 +1,6 @@
+exclude: ['Readme.md']
+baseurl: ''
+sass:
+  style: :compressed
+gems:
+- jekyll-sitemap

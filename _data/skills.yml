@@ -1,0 +1,10 @@
+- title: Ruby On Rails
+  value: 99
+- title: Javascript / CoffeeScript / jQuery <br/> AngularJS / Ember.js / Backbone.js
+  value: 88
+- title: HTML / Haml / Slim
+  value: 95
+- title: CSS / SASS / LESS / Compass
+  value: 90
+- title: MySQL / PostgreSQL / MongoDB / Redis
+  value: 75

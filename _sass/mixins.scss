@@ -1,0 +1,11 @@
+$violet:  #9b59b6;
+$black:   #3e3e3e;
+$gray:    #6b6b6b;
+$white:   #ffffff;
+$bg:      #272529;
+$violet-light:  #f9f9f9;
+
+@mixin transition($duration: 0.4s) {
+  transition: $duration;
+  -webkit-transition: $duration;
+}

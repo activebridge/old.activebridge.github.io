@@ -1,0 +1,127 @@
+- name: Eugene
+  id: jeka
+  class: grid_3
+  position: CEO
+  github: eugenekorpan
+  careers: eugenekorpan
+  linkedin: eugenekorpan
+
+- name: Alex
+  id: alex
+  class: grid_3
+  position: Director of Engineering
+  github: galulex
+  careers: galulex
+  linkedin: galulex
+
+- name: Galya
+  id: galya
+  class: grid_3
+  position: Office Manager
+  github:
+  careers:
+  linkedin:
+
+- name: Alex
+  id: marchenko
+  class: grid_3 omega
+  position: Chief Accountant
+  github:
+  careers:
+  linkedin:
+
+- name: Alexey
+  id: alexey
+  class: grid_3
+  position: RoR Engineer
+  github: Alexey-Lukin
+  careers: alexeylukin
+  linkedin: lukinalexey
+
+- name: Pasha
+  id: pasha
+  class: grid_3
+  position: RoR Engineer
+  github: pavel-mihailovskiy
+  careers: pavelmihailovskiy
+  linkedin: pavelmihailovskiy
+
+- name: Anton
+  id: anton
+  class: grid_3
+  position: RoR Engineer
+  github: antonzimin
+  careers: zimin
+  linkedin: antonzimin
+
+- name: Ruslan
+  id: ruslan
+  class: grid_3 omega
+  position: RoR Engineer
+  github: rpmilevskiy
+  careers: ruslanm
+  linkedin: ruslanmilevskiy
+
+- name: Igor
+  id: igor
+  class: grid_3
+  position: RoR Engineer
+  github: igorb
+  careers: igorvbilan
+  linkedin: igorbilan
+
+- name: Yuriy
+  id: yuriy
+  class: grid_3
+  position: RoR Engineer
+  github: bilogub
+  careers: bilogub
+  linkedin: bilogub
+
+- name: Eugene Surzhko
+  id: surzhko
+  class: grid_3
+  position: RoR Engineer
+  github: Surzhko
+  careers: eugenesurzhko
+  linkedin: eugenesurzhko
+
+- name: Alexey
+  id: verbaleks
+  class: grid_3 omega
+  position: RoR Engineer
+  github: verbaleks
+  careers: alexeyverbivskyy
+  linkedin: verbaleks
+
+- name: Alex
+  id: stadnik
+  class: grid_3
+  position: RoR Engineer
+  github: stadniklksndr
+  careers: stadniklksndr
+  linkedin: stadniklksndr
+
+- name: Oleg
+  id: oleg
+  class: grid_3
+  position: RoR Engineer
+  github: oleg-voloshyn
+  careers: voloshyn
+  linkedin: olegvoloshyn
+
+- name: Vova
+  id: vova
+  class: grid_3
+  position: RoR Engineer
+  github: vovap
+  careers: volodimirp
+  linkedin: vovap
+
+- name: Oleg Sobchuk
+  id: olegsobchuk
+  class: grid_3 omega
+  position: RoR Engineer
+  github: olegsobchuk
+  careers: olegsobchuk
+  linkedin: olegsobchuk

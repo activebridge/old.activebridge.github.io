@@ -1,12 +1,12 @@
 Instalation
 -
 
-    sudo gem install slim
+    git clone git@github.com:activebridge/activebridge.github.io.git activebridge
+    cd activebridge
+    sudo gem install jekyll
+    jekyll serve -w
 
-Compilation
+Steps to publish
 -
-    slimrb index.html.slim index.html
 
-Vim
--
-    :map <silent> <C-s>  : w \| r! slimrb index.html.slim index.html<cr>
+Just push your changes to master branch
