@@ -52,22 +52,23 @@
 
 .member-img {
   @include transition;
-  &.alexey   { @include photo('alexey.jpg');   }
-  &.pasha    { @include photo('pasha.jpg');    }
-  &.anton    { @include photo('anton.jpg');    }
-  &.jeka     { @include photo('jeka.jpg');     }
-  &.ruslan   { @include photo('ruslan.jpg');   }
-  &.alex     { @include photo('alex.jpg');     }
-  &.igor     { @include photo('igor.jpg');     }
-  &.vova     { @include photo('vova.jpg');     }
-  &.surzhko  { @include photo('surzhko.jpg');  }
-  &.oleg     { @include photo('voloshyn.jpg'); }
-  &.yuriy    { @include photo('yuriy.jpg');    }
-  &.galya    { @include photo('galya.jpg');    }
-  &.stadnik  { @include photo('stadnik.jpg');  }
-  &.verbaleks{ @include photo('verbaleks.jpg');}
-  &.marchenko{ @include photo('marchenko.jpg');}
-  &.olegsobchuk{ @include photo('olegsobchuk.jpg');}
+  &.alexey      { @include photo('alexey.jpg');   }
+  &.pasha       { @include photo('pasha.jpg');    }
+  &.anton       { @include photo('anton.jpg');    }
+  &.jeka        { @include photo('jeka.jpg');     }
+  &.ruslan      { @include photo('ruslan.jpg');   }
+  &.alex        { @include photo('alex.jpg');     }
+  &.igor        { @include photo('igor.jpg');     }
+  &.vova        { @include photo('vova.jpg');     }
+  &.surzhko     { @include photo('surzhko.jpg');  }
+  &.oleg        { @include photo('voloshyn.jpg'); }
+  &.yuriy       { @include photo('yuriy.jpg');    }
+  &.galya       { @include photo('galya.jpg');    }
+  &.stadnik     { @include photo('stadnik.jpg');  }
+  &.verbaleks   { @include photo('verbaleks.jpg');}
+  &.marchenko   { @include photo('marchenko.jpg');}
+  &.olegsobchuk { @include photo('olegsobchuk.jpg');}
+  &.volodymyr   { @include photo('volodymyr.jpg');}
 }
 
 .grid_2 .member-img { height: 150px; }

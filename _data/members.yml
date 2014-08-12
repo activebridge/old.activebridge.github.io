@@ -33,7 +33,7 @@
 - name: Alexey
   id: alexey
   class: grid_3
-  position: RoR Engineer
+  position: Lead RoR Engineer
   github: Alexey-Lukin
   careers: alexeylukin
   linkedin: lukinalexey
@@ -64,7 +64,7 @@
 
 - name: Igor
   id: igor
-  class: grid_3
+  class: grid_4
   position: RoR Engineer
   github: igorb
   careers: igorvbilan
@@ -72,7 +72,7 @@
 
 - name: Yuriy
   id: yuriy
-  class: grid_3
+  class: grid_4
   position: RoR Engineer
   github: bilogub
   careers: bilogub
@@ -80,7 +80,7 @@
 
 - name: Eugene Surzhko
   id: surzhko
-  class: grid_3
+  class: grid_4 omega
   position: RoR Engineer
   github: Surzhko
   careers: eugenesurzhko
@@ -88,7 +88,7 @@
 
 - name: Alexey
   id: verbaleks
-  class: grid_3 omega
+  class: grid_4
   position: RoR Engineer
   github: verbaleks
   careers: alexeyverbivskyy
@@ -96,7 +96,7 @@
 
 - name: Alex
   id: stadnik
-  class: grid_3
+  class: grid_4
   position: RoR Engineer
   github: stadniklksndr
   careers: stadniklksndr
@@ -104,7 +104,7 @@
 
 - name: Oleg
   id: oleg
-  class: grid_3
+  class: grid_4 omega
   position: RoR Engineer
   github: oleg-voloshyn
   careers: voloshyn
@@ -112,7 +112,7 @@
 
 - name: Vova
   id: vova
-  class: grid_3
+  class: grid_4
   position: RoR Engineer
   github: vovap
   careers: volodimirp
@@ -120,8 +120,16 @@
 
 - name: Oleg Sobchuk
   id: olegsobchuk
-  class: grid_3 omega
+  class: grid_4
   position: RoR Engineer
   github: olegsobchuk
   careers: olegsobchuk
   linkedin: olegsobchuk
+
+- name: Volodymyr
+  id: volodymyr
+  class: grid_4 omega
+  position: RoR Engineer
+  github: shamane
+  careers: shamane
+  linkedin: shamane
