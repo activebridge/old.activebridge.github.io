@@ -1,0 +1,19 @@
+---
+layout: blog
+---
+
+<ul>
+  {% for post in site.posts %}
+  <li class='grid_12'>
+    <a class='services-block' href="{{ post.url }}">
+      <div class='icon-stack'>
+        <i class='icon-circle base border'></i>
+        <i class='icon-circle base'></i>
+        <i class='small-icon icon-code'></i>
+      </div>
+      <p>{{ post.title }}</p>
+      <div class='text'>{{ post.title }}</div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

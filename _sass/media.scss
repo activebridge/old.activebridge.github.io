@@ -31,7 +31,7 @@
   }
   .home-text { margin-top: -40px; }
   #home h2 { font-size: 22; line-height: 78px; }
-  #navigation { height: 34px; }
+  .menu { height: 34px; }
 
   .bordered:before, .bordered:after { display: none; }
   .overlay-bg { padding: 188px 0 100px; }
@@ -74,10 +74,7 @@
   ul.navigation li a { padding: 7px 5px 8px; font-size: 11px; }
 
   .grid_2, .grid_3, .grid_4 { .member-img { height: 300px; }}
-  #navigation {
-    height: 35px;
-    li a { font-size: 11px; padding: 8px 4px; }
-  }
+  .menu { height: 35px; }
 
   .bordered:before, .bordered:after { display: none; }
   .overlay-bg { padding: 188px 0 60px; }

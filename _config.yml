@@ -1,4 +1,5 @@
 exclude: ['Readme.md']
+permalink: pretty
 baseurl: ''
 sass:
   style: :compressed
