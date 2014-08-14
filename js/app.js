@@ -1,13 +1,3 @@
-// Google Analytics
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-50401698-1', 'active-bridge.com');
-ga('send', 'pageview');
-
 // Navigation
 
 var fixed = false,
@@ -27,6 +17,7 @@ function navigate(){
     if (slide.offsetTop < window.scrollY + window.outerHeight/2 && slide.offsetTop + slide.offsetHeight > window.scrollY) {
       if (!trigered) links[i + 1].className = 'active';
       trigered = true;
+    }
   }
 
   if (this.scrollY > position) {
@@ -84,3 +75,13 @@ buttons = menu.getElementsByTagName('a');
 for(i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', bindScrollTo);
 }
+
+// Google Analytics
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-50401698-1', 'active-bridge.com');
+ga('send', 'pageview');
