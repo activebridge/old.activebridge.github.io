@@ -5,7 +5,14 @@
   background-size: 100%;
 }
 
-.team {
+ul.members {
+  text-align: justify;
+}
+
+.member {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 235px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
   text-align: center;
   background: $white;
@@ -61,7 +68,7 @@
   &.igor        { @include photo('igor.jpg');     }
   &.vova        { @include photo('vova.jpg');     }
   &.surzhko     { @include photo('surzhko.jpg');  }
-  &.oleg        { @include photo('voloshyn.jpg'); }
+  &.voloshyn    { @include photo('voloshyn.jpg'); }
   &.yuriy       { @include photo('yuriy.jpg');    }
   &.galya       { @include photo('galya.jpg');    }
   &.stadnik     { @include photo('stadnik.jpg');  }
@@ -71,6 +78,4 @@
   &.volodymyr   { @include photo('volodymyr.jpg');}
 }
 
-.grid_2 .member-img { height: 150px; }
-.grid_3 .member-img { height: 235px; }
-.grid_4 .member-img { height: 320px; }
+.member-img { height: 235px; }
