@@ -55,9 +55,11 @@ function slideTo(el){
     body.style.marginTop = 0;
 }
 
-function transitionEnd() {
-  this.style.transition = 'none';
-  navigate();
+function transitionEnd(e) {
+  if (e.target == body) {
+    this.style.transition = 'none';
+    navigate();
+  }
 }
 
 body.addEventListener('webkitTransitionEnd', transitionEnd);
