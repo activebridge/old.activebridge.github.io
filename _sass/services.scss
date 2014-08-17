@@ -39,25 +39,27 @@
   }
 }
 
-.icon-stack {
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  margin-left: -36px;
-  font-size: 30px;
-  color: white;
-  .base, .small-icon {
-    @include transition;
+.services-block, .post-body {
+  .icon-stack {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -36px;
+    font-size: 30px;
+    color: white;
+    .base, .small-icon {
+      @include transition;
+    }
+    .base {
+      padding: 5px;
+      font-size: 74px;
+      color: #2a282c;
+    }
+    .border {
+      color: #2a282c;
+      font-size: 85px;
+      padding: 0;
+    }
+    .small-icon { padding: 11px 0 0 12px; }
   }
-  .base {
-    padding: 5px;
-    font-size: 74px;
-    color: #2a282c;
-  }
-  .border {
-    color: #2a282c;
-    font-size: 85px;
-    padding: 0;
-  }
-  .small-icon { padding: 11px 0 0 12px; }
 }
