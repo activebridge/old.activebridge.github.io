@@ -5,7 +5,6 @@
 
   .overlay-bg { padding: 150px 0 30px; }
   .container { width: 724px; }
-  .bordered:before, .bordered:after { display: none; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 766px) {
@@ -30,7 +29,6 @@
   #home h2 { font-size: 22; line-height: 78px; }
   .menu { height: 34px; }
 
-  .bordered:before, .bordered:after { display: none; }
   .overlay-bg { padding: 188px 0 100px; }
 
   h1 {
@@ -73,7 +71,6 @@
   .member { width: 100%; }
   .menu { height: 35px; }
 
-  .bordered:before, .bordered:after { display: none; }
   .overlay-bg { padding: 188px 0 60px; }
   .home-text { margin-top: -40px; }
   #home h2 { font-size: 18px; line-height: 82px; }
@@ -116,6 +113,7 @@
 
 @media screen and (max-width : 399px) {
 
+  .bordered:before, .bordered:after { display: none; }
   .overlay-bg { padding: 30px 0; }
   .member { width: 100%; }
 
