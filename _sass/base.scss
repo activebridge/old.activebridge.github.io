@@ -349,3 +349,10 @@ ul.about-list li {
 * html .clearfix,*:first-child+html .clearfix {
   zoom: 1;
 }
+
+.post-body {
+  position: relative;
+  padding: 40px;
+  border: 1px solid #ededed;
+  background: #ffffff;
+}

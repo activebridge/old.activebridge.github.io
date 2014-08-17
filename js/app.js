@@ -4,10 +4,20 @@ var fixed = false,
 body = document.body,
 nav = document.getElementById('navigation'),
 menu = document.getElementById('nav'),
-links = menu.getElementsByTagName('li');
-nav.classList.remove('fixed');
-slides = document.getElementsByClassName('slide')
-var position = nav.offsetTop;
+slides = document.getElementsByClassName('slide');
+if (nav){
+  var position = nav.offsetTop;
+  window.onscroll = navigate;
+
+}
+if (menu) {
+  var links = menu.getElementsByTagName('li');
+  var buttons = menu.getElementsByTagName('a');
+
+  for(i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', bindScrollTo);
+  }
+}
 
 function navigate(){
   var trigered = false;
@@ -62,15 +72,7 @@ function bindScrollTo(event) {
   setTimeout(function(){ location.hash = hash }, 500)
 }
 
-window.onscroll = navigate;
-
-var id, buttons = document.getElementsByClassName('button');
-
-for(i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', bindScrollTo);
-}
-
-buttons = menu.getElementsByTagName('a');
+buttons = document.getElementsByClassName('button');
 
 for(i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', bindScrollTo);

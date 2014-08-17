@@ -1,31 +1,15 @@
-<!DOCTYPE html>
-<html class='csstransforms no-csstransforms3d csstransitions'>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-    <meta content='width=device-width, initial-scale = 1, maximum-scale = 1' name='viewport'>
-    <meta charset='utf-8'>
-    <title>Active Bridge</title>
-    <meta content='index,follow,noodp,noydir' name='robots'>
-    <meta content='' name='author'>
-    <meta content='ActiveBrdige, Web application development, Ruby on Rails development, Ruby on Rails Development Team, Active Bridge' name='keywords'>
-    <meta content='Active Bridge is an intentionally small team of highly technical Ruby on Rails developers who can develop systems tailored to meet all your business needs.' name='description'>
-    <meta content='1AeEQ7FZFB4K7URidlmD2UP6z9pzq5HMUACZOhVRbpA' name='google-site-verification'>
-    <link href='images/favicon.ico' rel='shortcut icon' type='image/x-icon'>
-    <link async rel="stylesheet" href='/css/app.css'>
-  </head>
-  <body>
-    <div class='menu'>
-      <ul class='navigation right'>
-        <li><a href='/'>Home</a></li>
-        <li class='active'><a href='/blog'>Blog</a></li>
-      </ul>
-    </div>
-    <div class='slide'>
-      <div class='slide'>
-        <div class='container clearfix'>{{ content }}</div>
-      </div>
-    </div>
-    {{ site.description }}
-    {% include footer.html %}
-  </body>
-</html>
+---
+layout: app
+---
+
+<div class='menu fixed'>
+  <ul class='navigation right'>
+    <li><a href='/'>Home</a></li>
+    <li class='active'><a href='/blog'>Blog</a></li>
+  </ul>
+</div>
+<div class='slide'>
+  <div class='slide'>
+    <div class='container clearfix'>{{ content }}</div>
+  </div>
+</div>
