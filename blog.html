@@ -12,7 +12,7 @@ layout: blog
         <i class='small-icon icon-code'></i>
       </div>
       <p>{{ post.title }}</p>
-      <div class='text'>{{ post.title }}</div>
+      <div class='text'>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
     </a>
   </li>
   {% endfor %}
