@@ -1,15 +1,15 @@
 // Navigation
 
 var fixed = false,
-body = document.body,
-nav = document.getElementById('navigation'),
-menu = document.getElementById('nav'),
-slides = document.getElementsByClassName('slide');
-if (nav){
-  var position = nav.offsetTop;
-  window.onscroll = navigate;
+body      = document.body,
+nav       = document.getElementById('navigation'),
+menu      = document.getElementById('nav'),
+slides    = document.getElementsByClassName('slide');
 
+if (nav){
+  window.onscroll = navigate;
 }
+
 if (menu) {
   var links = menu.getElementsByTagName('li');
   var buttons = menu.getElementsByTagName('a');
@@ -23,14 +23,15 @@ function navigate(){
   var trigered = false;
   for (i = 0; i < slides.length; i++) {
     var slide = slides[i];
-    links[i].classList.remove('active')
-    if (slide.offsetTop < window.scrollY + window.outerHeight/2 && slide.offsetTop + slide.offsetHeight > window.scrollY) {
+    links[i].classList.remove('active');
+    if (slide.offsetTop + slide.offsetHeight > window.scrollY + window.outerHeight * 0.3) {
       if (!trigered) links[i].className = 'active';
       trigered = true;
     }
   }
 
-  if (this.scrollY > position) {
+  var margin = parseInt(body.style.marginTop, 10) || 0;
+  if (this.scrollY > nav.offsetTop) {
     if (!fixed) {
       fixed = true;
       nav.className = nav.className + ' fixed';
@@ -55,23 +56,16 @@ function slideTo(el){
   body.style.marginTop = 0;
 }
 
-function transitionEnd(e) {
-  if (e.target == body) {
-    this.style.transition = 'none';
-    navigate();
-  }
+function transitionEnd(hash) {
+  location.hash = hash
+  body.style.transition = 'none';
+  navigate();
 }
-
-body.addEventListener('webkitTransitionEnd', transitionEnd);
-body.addEventListener('transitionend', transitionEnd);
-body.addEventListener('msTransitionEnd', transitionEnd);
-body.addEventListener('oTransitionEnd', transitionEnd);
 
 function bindScrollTo(event) {
   event.preventDefault();
   slideTo(document.getElementById(this.hash.substr(1)));
-  var hash = this.hash
-  setTimeout(function(){ location.hash = hash }, 500)
+  setTimeout(transitionEnd, 500, this.hash)
 }
 
 buttons = document.getElementsByClassName('button');
