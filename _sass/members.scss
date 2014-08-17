@@ -58,6 +58,7 @@ ul.members {
 }
 
 .member-img {
+  img { visibility: hidden; display: block; }
   @include transition;
   &.alexey      { @include photo('alexey.jpg');   }
   &.pasha       { @include photo('pasha.jpg');    }
@@ -77,5 +78,3 @@ ul.members {
   &.olegsobchuk { @include photo('olegsobchuk.jpg');}
   &.volodymyr   { @include photo('volodymyr.jpg');}
 }
-
-.member-img { height: 235px; }
