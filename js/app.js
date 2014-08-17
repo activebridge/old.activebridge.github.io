@@ -23,9 +23,9 @@ function navigate(){
   var trigered = false;
   for (i = 0; i < slides.length; i++) {
     var slide = slides[i];
-    links[i + 1].classList.remove('active')
+    links[i].classList.remove('active')
     if (slide.offsetTop < window.scrollY + window.outerHeight/2 && slide.offsetTop + slide.offsetHeight > window.scrollY) {
-      if (!trigered) links[i + 1].className = 'active';
+      if (!trigered) links[i].className = 'active';
       trigered = true;
     }
   }

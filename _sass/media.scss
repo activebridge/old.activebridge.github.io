@@ -1,11 +1,14 @@
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 
-  #home h1 { font-size: 60px; line-height: 80px; }
-  #home h2 { font-size: 18px; line-height: 65px; }
-  .member { width: 200px; }
+  #home {
+    padding: 150px 0 30px;
+    h1 { font-size: 60px; line-height: 80px; }
+    h2 { font-size: 18px; line-height: 65px; }
+  }
 
-  .overlay-bg { padding: 150px 0 30px; }
+  .member { width: 200px; }
   .container { width: 724px; }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 766px) {
@@ -19,18 +22,19 @@
     }
   }
 
-  .overlay-bg { padding: 20px 0; }
   .member { width: 180px; }
-  #home h1 {
-    font-size: 52px;
-    line-height: 40px;
-    margin-top: 10px;
+  #home {
+    padding: 188px 0 100px;
+    h1 {
+      font-size: 52px;
+      line-height: 40px;
+      margin-top: 10px;
+    }
+    .home-text { margin-top: -40px; }
+    h2 { font-size: 22; line-height: 78px; }
   }
-  .home-text { margin-top: -40px; }
-  #home h2 { font-size: 22; line-height: 78px; }
-  .menu { height: 34px; }
 
-  .overlay-bg { padding: 188px 0 100px; }
+  .menu { height: 34px; }
 
   h1 {
     float: none;
@@ -72,17 +76,20 @@
   .member { width: 100%; }
   .menu { height: 35px; }
 
-  .overlay-bg { padding: 188px 0 60px; }
-  .home-text { margin-top: -40px; }
-  #home h2 { font-size: 18px; line-height: 82px; }
-  h4 { font-size: 24px; }
   .heading-arrow { float: none; font-size: 40px; }
 
-  #home h1 {
-    font-size: 30px;
-    line-height: 40px;
-    margin-top: 10px;
+  #home {
+    padding: 188px 0 60px;
+    h2 { font-size: 18px; line-height: 82px; }
+    .home-text { margin-top: -40px; }
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-top: 10px;
+    }
   }
+
+  h4 { font-size: 24px; }
 
   h1 {
     float: none;
@@ -115,7 +122,7 @@
 @media screen and (max-width : 399px) {
 
   .bordered:before, .bordered:after { display: none; }
-  .overlay-bg { padding: 30px 0; }
+  #home { padding: 30px 0; }
   .member { width: 100%; }
 
   .heading-arrow {

@@ -132,7 +132,7 @@ h5 {
 
 .contact-info li { margin-right: 10px; font-size: 16px; }
 
-.menu, #footer, .overlay-bg, .split-slide {
+.menu, #footer, #home, .split-slide {
   background: url(../images/overlay-bg.png) repeat left top;
 }
 
@@ -211,14 +211,6 @@ ul.navigation {
   margin-top: 15px;
 }
 
-.overlay-bg {
-  padding: 160px 0;
-  position: relative;
-  top: 0;
-  bottom: -57px;
-  height: 100%;
-}
-
 .home-text {
   display: inline-block;
   padding: 0 12px 28px;
@@ -231,6 +223,8 @@ ul.navigation {
 }
 
 #home {
+  padding: 160px 0;
+  position: relative;
   width: 100%;
   text-align: center;
   h1 {
