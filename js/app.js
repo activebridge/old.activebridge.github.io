@@ -7,6 +7,7 @@ menu      = document.getElementById('nav'),
 slides    = document.getElementsByClassName('slide');
 
 if (nav){
+  var position = nav.offsetTop;
   window.onscroll = navigate;
 }
 
@@ -30,8 +31,7 @@ function navigate(){
     }
   }
 
-  var margin = parseInt(body.style.marginTop, 10) || 0;
-  if (this.scrollY > nav.offsetTop) {
+  if (this.scrollY > position) {
     if (!fixed) {
       fixed = true;
       nav.className = nav.className + ' fixed';
