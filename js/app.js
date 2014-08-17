@@ -44,15 +44,15 @@ function navigate(){
 }
 
 function slideTo(el){
-    var to = el.offsetTop,
-        from = window.scrollY,
-        dy = to-from;
+  var to = el ? el.offsetTop : 0,
+  from = window.scrollY,
+  dy = to-from;
 
-    body.style.marginTop = dy+'px';
-    window.scrollTo(0, to);
+  body.style.marginTop = dy+'px';
+  window.scrollTo(0, to);
 
-    body.style.transition = 'margin-top 0.5s ease-in-out';
-    body.style.marginTop = 0;
+  body.style.transition = 'margin-top 0.5s ease-in-out';
+  body.style.marginTop = 0;
 }
 
 function transitionEnd(e) {
