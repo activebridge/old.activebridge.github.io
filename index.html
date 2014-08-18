@@ -76,7 +76,8 @@ layout: app
     {% include slide.html slide=2 %}
 
     <ul class='members'>
-      {% for member in site.data.members %}
+      {% assign members = site.data.members | sort:"position" %}
+      {% for member in members %}
       {% include member.html member=member %}
       {% endfor %}
     </ul>
