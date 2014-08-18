@@ -1,5 +1,6 @@
 ---
 layout: post
+description: Chrome Tracker is Odesk or Elance tracker analog designed to help you track your activities and productivity of your employees.
 tags: [Chrome Tracker, Odesk Tracker, Elance Tracker, Time Tracker, Activity Tracker, Freelance Tracker, Time Tracking Tool, Freelancers Tracking Tool, Employees Tracker, Employees Tracking Tool]
 ---
 
