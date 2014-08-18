@@ -13,7 +13,7 @@ if (nav){
 
 if (menu) {
   var links = menu.getElementsByTagName('li');
-  var buttons = menu.getElementsByTagName('a');
+  var buttons = menu.getElementsByClassName('nav-item');
 
   for(i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', bindScrollTo);

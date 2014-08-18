@@ -4,7 +4,11 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta content='width=device-width, initial-scale = 1, maximum-scale = 1' name='viewport'>
     <meta charset='utf-8'>
+    {% if page.title %}
+    <title>{{page.title}}</title>
+    {% else %}
     <title>Active Bridge</title>
+    {% endif %}
     <meta content='index,follow,noodp,noydir' name='robots'>
     <meta content='Active Bridge, LLC' name='author'>
     {% if page.description %}
