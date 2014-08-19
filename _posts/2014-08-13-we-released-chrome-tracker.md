@@ -16,8 +16,8 @@ tags: [Chrome Tracker, Odesk Tracker, Elance Tracker, Time Tracker, Activity Tra
 >
 > This is still BETA version, work is still in progress. Here some screenshots of web app:
 >
->>![chrome tracker](https://lh5.googleusercontent.com/lJ20iPYvuXb7Q-NZYUjYOt8sCtfPEOcuGomCLf9bNFGDpBTpI1TQz-Uf4PBYJRVEXWn8uuWDrA=s640-h400-e365-rw)
->>![chrome tracker](https://lh3.googleusercontent.com/XD6bMqilnkvdh_hQdkKwj5t-S74ARikfoZll5ulrdF5JXctZGmfciE_pZsnRG0KSoj2I7g8N=s640-h400-e365-rw)
+>>![chrome tracker](http://i.imgur.com/HP0d814.jpg)
+>>![chrome tracker](http://i.imgur.com/nZ5vCm4.jpg)
 
 > Feel free to Sign Up [here](http://chrometracker.com/).
 
