@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Active Bridge holidays
+title: Holidays
 ---
 
 ###List of our holidays:
