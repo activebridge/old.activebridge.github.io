@@ -14,11 +14,12 @@
 @media only screen and (min-width: 480px) and (max-width: 766px) {
 
   ul.navigation {
-    float: none;
+    text-align: center;
     margin: 0;
     li a {
-      padding: 7px 12px;
-      font-size: 12px;
+      padding: 12px 10px;
+      font-size: 18px;
+      span { font-size: 11px; }
     }
   }
 
@@ -33,8 +34,6 @@
     .home-text { margin-top: -40px; }
     h2 { font-size: 22; line-height: 78px; }
   }
-
-  .menu { height: 34px; }
 
   h1 {
     float: none;
@@ -71,10 +70,16 @@
 
 @media screen and (max-width : 479px) {
 
-  ul.navigation li a { padding: 7px 5px 8px; font-size: 11px; }
+  ul.navigation {
+    text-align: center;
+    li a {
+      font-size: 28px;
+      padding: 8px;
+      span { display: none; }
+    }
+  }
 
   .member { width: 100%; }
-  .menu { height: 35px; }
 
   .heading-arrow { float: none; font-size: 40px; }
 
