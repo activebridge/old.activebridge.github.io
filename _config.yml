@@ -6,6 +6,7 @@ sass:
 gems:
 - jekyll-sitemap
 
+title: Active Bridge
 description: Active Bridge is an intentionally small team of highly technical Ruby on Rails developers
              who can develop systems tailored to meet all your business needs.
 keywords: ActiveBrdige, Web application development, Ruby on Rails development, Ruby on Rails Development Team, Active Bridge
