@@ -25,13 +25,12 @@
 
   .member { width: 180px; }
   #home {
-    padding: 188px 0 100px;
+    padding: 200px 0 100px;
     h1 {
       font-size: 52px;
       line-height: 40px;
       margin-top: 10px;
     }
-    .home-text { margin-top: -40px; }
     h2 { font-size: 22; line-height: 78px; }
   }
 
@@ -84,9 +83,8 @@
   .heading-arrow { float: none; font-size: 40px; }
 
   #home {
-    padding: 188px 0 60px;
+    padding: 200px 0 60px;
     h2 { font-size: 18px; line-height: 82px; }
-    .home-text { margin-top: -40px; }
     h1 {
       font-size: 30px;
       line-height: 40px;
@@ -124,10 +122,10 @@
   .left { float: none; }
 }
 
-@media screen and (max-width : 399px) {
+@media screen and (max-width : 320px) {
 
   .bordered:before, .bordered:after { display: none; }
-  #home { padding: 30px 0; }
+  #home { padding: 75px 0; }
   .member { width: 100%; }
 
   .heading-arrow {
@@ -150,7 +148,7 @@
   .grid_11,
   .grid_12,
   .container {
-    width: 295px;
+    width: 285px;
   }
 
   .copyright { font-size: 10px; }
