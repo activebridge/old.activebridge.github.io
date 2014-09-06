@@ -48,7 +48,7 @@ body {
 }
 
 .main {
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 ::selection, ::-moz-selection { background: $violet; color: $white; }
