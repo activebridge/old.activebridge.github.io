@@ -32,16 +32,12 @@ function navigate(){
   }
 
   var scrollY = window.scrollY || window.pageYOffset
-  if (scrollY > position) {
-    if (!fixed) {
-      fixed = true;
-      nav.className = nav.className + ' fixed';
-    }
-  } else {
-    if (fixed) {
-      fixed = false;
-      nav.classList.remove('fixed');
-    }
+  if (scrollY > position && !fixed) {
+    fixed = true;
+    nav.className = nav.className + ' fixed';
+  } else if (scrollY <= position && fixed) {
+    fixed = false;
+    nav.classList.remove('fixed');
   }
 }
 
