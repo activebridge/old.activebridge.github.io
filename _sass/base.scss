@@ -42,13 +42,6 @@ body {
   color: $gray;
   background-color: $white;
   overflow-x: hidden;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.main {
-  flex: 1 1 0;
 }
 
 ::selection, ::-moz-selection { background: $violet; color: $white; }
