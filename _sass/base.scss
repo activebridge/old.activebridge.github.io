@@ -111,7 +111,7 @@ h5 {
   margin: 6px;
   padding: 0 20px;
   font-size: 64px;
-  @include transition;
+  transition: color .3s;
   opacity: 0.7;
   &:hover  { color: $violet; }
 }
@@ -154,7 +154,7 @@ h5 {
 }
 
 .menu {
-  @include transition;
+  transition: .3s;
   position: absolute;
   width: 100%;
   background-color: $bg;
@@ -181,9 +181,13 @@ ul.navigation {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    @include transition;
+    transition: background-position .3s;
+    background-image: linear-gradient(to bottom, transparent 50%, $violet 50%);
+    background-size: 100% 200%;
     &:first-child { margin-left: 0; }
-    &:hover, &.active { cursor: pointer; background: $violet; }
+    &:hover, &.active {
+      background-position: 0 -100%;
+    }
     a {
       display: block;
       padding: 24px 18px;
@@ -273,7 +277,6 @@ ul.navigation {
     float: left;
     font-size: 12px;
     text-align: center;
-    @include transition;
     border-radius: 2px;
     background-color: $violet;
     background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -355,7 +358,7 @@ ul.about-list li {
   font-size: 30px;
   color: $white;
   .base, .small-icon {
-    @include transition;
+    transition: .3s;
   }
   .base {
     padding: 5px;

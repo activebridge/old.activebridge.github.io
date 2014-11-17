@@ -5,8 +5,3 @@ $white:   #ffffff;
 $bg:      #272529;
 $violet-light:  #f9f9f9;
 $light-gray:    #ededed;
-
-@mixin transition($duration: 0.4s) {
-  transition: $duration;
-  -webkit-transition: $duration;
-}

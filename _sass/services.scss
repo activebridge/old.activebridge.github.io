@@ -10,7 +10,7 @@
   line-height: 22px !important;
   margin-bottom: 35px;
   padding: 25px 15px;
-  @include transition;
+  transition: .3s;
   &:hover {
     border: 1px solid $violet;
     background: $violet;
@@ -27,7 +27,7 @@
     line-height: 22px;
     color: $black;
     padding-top: 10px;
-    @include transition;
+    transition: .3s;
     text-transform: uppercase;
   }
   .text {
