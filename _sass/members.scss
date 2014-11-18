@@ -43,9 +43,9 @@ ul.members {
     font-size: 24px;
     transition: .3s;
     &:hover {
-     -webkit-transform: rotate(360deg);
-     transform: rotate(360deg);
-     .base { color: $violet; }
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      .base { color: $violet; }
     }
     .base {
       font-size: 44px;
@@ -56,24 +56,19 @@ ul.members {
 }
 
 .member-img {
-  img { visibility: hidden; display: block; }
+  background-repeat: no-repeat;
+  background-size: 100%;
+  img {
+    visibility: hidden;
+    display: block;
+    position: relative;
+  }
+  &:before {
+    content: attr(data-src, url);
+    // background: attr(data-src url);
+    display: block;
+    position: absolute;
+    visibility: visible;
+  }
   transition: .3s;
-  &.alexey      { @include photo('alexey.jpg');   }
-  &.pasha       { @include photo('pasha.jpg');    }
-  &.anton       { @include photo('anton.jpg');    }
-  &.jeka        { @include photo('jeka.jpg');     }
-  &.ruslan      { @include photo('ruslan.jpg');   }
-  &.alex        { @include photo('alex.jpg');     }
-  &.igor        { @include photo('igor.jpg');     }
-  &.vova        { @include photo('vova.jpg');     }
-  &.surzhko     { @include photo('surzhko.jpg');  }
-  &.voloshyn    { @include photo('voloshyn.jpg'); }
-  &.yuriy       { @include photo('yuriy.jpg');    }
-  &.galya       { @include photo('galya.jpg');    }
-  &.stadnik     { @include photo('stadnik.jpg');  }
-  &.verbaleks   { @include photo('verbaleks.jpg');}
-  &.marchenko   { @include photo('marchenko.jpg');}
-  &.olegsobchuk { @include photo('olegsobchuk.jpg');}
-  &.volodymyr   { @include photo('volodymyr.jpg');}
-  &.dmitriy     { @include photo('dmitriy.jpg');}
 }
