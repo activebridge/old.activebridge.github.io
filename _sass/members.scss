@@ -41,16 +41,16 @@ ul.members {
       stroke-width: 20;
       transition-delay: 0.1s;
       &.top {
-        transform: translateX(-220px);
+        transform: translateX(-270px);
       }
       &.bottom {
-        transform: translateX(220px);
+        transform: translateX(270px);
       }
       &.left {
-        transform: translateY(347px);
+        transform: translateY(397px);
       }
       &.right {
-        transform: translateY(-347px);
+        transform: translateY(-397px);
       }
     }
   }
@@ -65,11 +65,11 @@ ul.members {
       transition: all .3s ease-in-out;
       &.top,
       &.bottom {
-        stroke-dasharray: 250 160;
+        stroke-dasharray: 300 160;
       }
       &.left,
       &.right {
-        stroke-dasharray: 377 287;
+        stroke-dasharray: 427 287;
       }
     }
   }

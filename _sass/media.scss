@@ -6,7 +6,20 @@
     h2 { font-size: 18px; line-height: 65px; }
   }
 
-  .member { width: 200px; }
+  .member {
+    width: 200px;
+    &:hover h4 { font-size: 26px}
+    & svg line {
+      &.top,
+      &.bottom {
+        stroke-dasharray: 300 140;
+      }
+      &.left,
+      &.right {
+        stroke-dasharray: 427 267;
+      }
+    }
+  }
   .container { width: 724px; }
 
 }
@@ -23,7 +36,20 @@
     }
   }
 
-  .member { width: 180px; }
+  .member {
+    width: 180px;
+    &:hover h4 { font-size: 24px}
+    & svg line {
+      &.top,
+      &.bottom {
+        stroke-dasharray: 300 120;
+      }
+      &.left,
+      &.right {
+        stroke-dasharray: 427 247;
+      }
+    }
+  }
   #home {
     padding: 200px 0 100px;
     h1 {
@@ -78,7 +104,20 @@
     }
   }
 
-  .member { width: 100%; }
+  .member {
+    width: 100%;
+    &:hover h4 { font-size: 36px}
+    & svg line {
+      &.top,
+      &.bottom {
+        stroke-dasharray: 300 240;
+      }
+      &.left,
+      &.right {
+        stroke-dasharray: 427 367;
+      }
+    }
+  }
 
   .heading-arrow { float: none; font-size: 40px; }
 
@@ -126,7 +165,20 @@
 
   .bordered:before, .bordered:after { display: none; }
   #home { padding: 75px 0; }
-  .member { width: 100%; }
+  .member {
+    width: 100%;
+    &:hover { h4 { font-size: 36px;} }
+    & svg line {
+      &.top,
+      &.bottom {
+        stroke-dasharray: 300 225;
+      }
+      &.left,
+      &.right {
+        stroke-dasharray: 427 355;
+      }
+    }
+  }
 
   .heading-arrow {
     float: none;
