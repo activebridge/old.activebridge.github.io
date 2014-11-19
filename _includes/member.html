@@ -1,5 +1,11 @@
 <li class="member">
-  <div class="member-img {{ include.member.id }}" style='background-image: url("../images/{{ include.member.id }}.jpg")'>
+  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <line class="top" x1="0" y1="0" x2="660" y2="0"></line>
+    <line class="left" x1="0" y1="347" x2="0" y2="-694"></line>
+    <line class="bottom" x1="220" y1="347" x2="-660" y2="347"></line>
+    <line class="right" x1="220" y1="0" x2="220" y2="694"></line>
+  </svg>
+  <div class="member-img {{ include.member.id }}" style='background-image: url("../images/{{ include.member.id }}_funny.jpg")'>
     <img src='../images/{{ include.member.id }}.jpg'/>
   </div>
   <h4>{{ include.member.name }}</h4>
