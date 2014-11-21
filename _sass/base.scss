@@ -245,6 +245,8 @@ ul.navigation {
 }
 
 #home {
+  height: 100vh;
+  box-sizing: border-box;
   padding: 160px 0;
   position: relative;
   width: 100%;
