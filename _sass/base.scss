@@ -23,6 +23,10 @@ menu, ol, ul {
 
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
+.main {
+  overflow: hidden;
+}
+
 .bg {
   position: fixed;
   top: 0;
