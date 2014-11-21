@@ -6,6 +6,7 @@
 }
 
 html {
+  overflow-x: hidden;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -98,7 +99,6 @@ h5 {
   background-attachment: fixed;
   width: 100%;
   position: relative;
-  overflow: hidden;
   &:before, &:after {
     content: '';
     background: inherit;
