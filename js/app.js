@@ -4,7 +4,10 @@ var fixed = false,
 body      = document.body,
 nav       = document.getElementById('navigation'),
 menu      = document.getElementById('nav'),
-slides    = document.getElementsByClassName('slide');
+slides    = document.getElementsByClassName('slide'),
+home      = document.getElementById('home');
+
+home.style.padding = ((window.innerHeight-360)/2).toString()+"px 0";
 
 if (nav){
   var position = nav.offsetTop;

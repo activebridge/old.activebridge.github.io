@@ -101,15 +101,14 @@ h5 {
   &:before, &:after {
     content: '';
     background: inherit;
-    height: 75px;
+    height: 90px;
     top: -40px;
     width: 110%;
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
     position: absolute;
   }
   &:after {
     top: auto;
-    bottom: -33px;
     left: -1%;
     z-index: 1;
   }
@@ -176,6 +175,7 @@ h5 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
   border-top: 3px solid $violet;
   z-index: 2;
+  overflow: hidden;
   &.fixed {
     position: fixed;
     top: 0;
