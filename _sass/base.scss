@@ -53,7 +53,7 @@ a:link { color: $violet; text-decoration: none; }
 a:hover { color: $violet; }
 a:visited { color: $violet; text-decoration: none; }
 
-h1 {
+.slide h1 {
   float: left;
   margin: 0 13px 40px 0;
   padding: 0 19px 0 0;
@@ -235,21 +235,10 @@ ul.navigation {
   margin-top: 15px;
 }
 
-.home-text {
-  display: inline-block;
-  padding: 0 12px 28px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 33px;
-  color: $white;
-  text-shadow: 3px 3px 3px rgba(0,0,0,0.21);
-}
-
 #home {
   height: 100vh;
   box-sizing: border-box;
-  padding: 160px 0;
+  padding: 30vh 0;
   position: relative;
   width: 100%;
   text-align: center;
@@ -257,30 +246,18 @@ ul.navigation {
     content: none;
   }
   h1 {
-    float: none;
-    border-right: none;
-    margin: 0;
-    padding: 0 0 27px;
-    text-align: center;
     text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 100px;
-    line-height: 85px;
+    font-size: 10vmin;
     color: $white;
-    font-weight: 900;
-    text-shadow: 5px 5px 15px $violet;
+    font-weight: bold;
+    text-shadow: 5px 5px 15px $black;
   }
   h2 {
-    margin: 0;
-    padding: 0 0 99px 0;
-    letter-spacing: 0.7px;
     text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 4vmin;
     color: $white;
     font-weight: 500;
-    text-shadow: 0 0 1px $white;
+    text-shadow: 0 0 1px $black;
   }
 }
 

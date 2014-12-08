@@ -1,11 +1,5 @@
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
 
-  #home {
-    padding: 150px 0 30px;
-    h1 { font-size: 60px; line-height: 80px; }
-    h2 { font-size: 18px; line-height: 65px; }
-  }
-
   .member {
     width: 200px;
     &:hover h4 { font-size: 26px}
@@ -50,17 +44,8 @@
       }
     }
   }
-  #home {
-    padding: 200px 0 100px;
-    h1 {
-      font-size: 52px;
-      line-height: 40px;
-      margin-top: 10px;
-    }
-    h2 { font-size: 22; line-height: 78px; }
-  }
 
-  h1 {
+  .slide h1 {
     float: none;
     font-size: 60px;
     border-right: none;
@@ -121,19 +106,9 @@
 
   .heading-arrow { float: none; font-size: 40px; }
 
-  #home {
-    padding: 200px 0 60px;
-    h2 { font-size: 18px; line-height: 82px; }
-    h1 {
-      font-size: 30px;
-      line-height: 40px;
-      margin-top: 10px;
-    }
-  }
-
   h4 { font-size: 24px; }
 
-  h1 {
+  .slide h1 {
     float: none;
     border-right: none;
     margin-top: 30px;
@@ -164,7 +139,6 @@
 @media screen and (max-width : 320px) {
 
   .bordered:before, .bordered:after { display: none; }
-  #home { padding: 75px 0; }
   .member {
     width: 100%;
     &:hover { h4 { font-size: 36px;} }
