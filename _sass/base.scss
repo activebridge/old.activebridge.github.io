@@ -53,19 +53,13 @@ a:link { color: $violet; text-decoration: none; }
 a:hover { color: $violet; }
 a:visited { color: $violet; text-decoration: none; }
 
-.slide h1 {
+section h1 {
   float: left;
-  margin: 0 13px 40px 0;
-  padding: 0 19px 0 0;
+  padding-right: 20px;
   text-transform: uppercase;
-  text-align: left;
-  font-style: normal;
-  background: none;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 76px;
-  line-height: 65px;
+  font-size: 10vmin;
   color: $black;
-  font-weight: 700;
   margin-top: 15px;
 }
 
@@ -159,7 +153,8 @@ h5 {
     &:hover { color: $violet }
   }
   .social-icons {
-    margin: 15px;
+    margin: 15px 0;
+    a { padding: 0; }
   }
 
   .copyright {
@@ -217,22 +212,10 @@ ul.navigation {
   }
 }
 
-.heading-arrow {
-  float: right;
-  margin: 0 0px 10px 20px;
-  font-size: 60px;
-  color: $black;
-}
-
 .heading-description {
-  margin: 0;
-  padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  line-height: 18px;
   font-style: italic;
-  padding-top: 13px;
-  margin-top: 15px;
 }
 
 #home {
@@ -331,7 +314,7 @@ ul.about-list li {
 .omega { margin-right: 0; }
 
 .container {
-  width: 1000px;
+  width: 90%;
   max-width: 1000px;
   margin: auto;
 }

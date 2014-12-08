@@ -3,7 +3,7 @@ layout: app
 ---
 
 <div class='bg'></div>
-<div id='home'>
+<div id='home' class='slide'>
   <h2>Hello, we are</h2>
   <h1>Active Bridge</h1>
   <h2>Ruby on Rails Developers</h2>
@@ -14,7 +14,7 @@ layout: app
 
 <div class='menu' id='navigation'>
   <ul class='navigation' id='nav'>
-    <li class='active'>
+    <li>
       <a class='nav-item icon-home' href='#home'>
         <span>Home</span>
       </a>
@@ -47,7 +47,7 @@ layout: app
   </ul>
 </div>
 
-<div id='about' class='slide'>
+<section id='about' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=0 %}
     <div class='grid_8'>
@@ -79,11 +79,11 @@ layout: app
       </ul>
     </div>
   </div>
-</div>
+</section>
 
 {% include spliter.html slide="#about" %}
 
-<div id='services' class='slide'>
+<section id='services' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=1 %}
 
@@ -91,11 +91,11 @@ layout: app
       {% include service.html service=service %}
     {% endfor %}
   </div>
-</div>
+</section>
 
 {% include spliter.html slide="#services" %}
 
-<div id='team' class='slide'>
+<section id='team' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=2 %}
 
@@ -106,11 +106,11 @@ layout: app
       {% endfor %}
     </ul>
   </div>
-</div>
+</section>
 
 {% include spliter.html slide="#team" %}
 
-<div id='contacts' class='slide'>
+<section id='contacts' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=3 %}
     <div class='grid_12'>
@@ -122,4 +122,4 @@ layout: app
       </ul>
     </div>
   </div>
-</div>
+</section>
