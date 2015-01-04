@@ -5,21 +5,18 @@ body      = document.body,
 nav       = document.getElementById('navigation'),
 menu      = document.getElementById('nav'),
 slides    = document.getElementsByClassName('slide'),
-home      = document.getElementById('home');
+links     = menu.getElementsByTagName('li'),
+position  = nav.offsetTop;
 
-if (nav){
-  var position = nav.offsetTop;
-  window.onscroll = navigate;
-}
+window.onscroll = navigate;
 
-if (menu) {
-  var links = menu.getElementsByTagName('li');
-  var buttons = menu.getElementsByClassName('nav-item');
+[].forEach.call(menu.getElementsByClassName('nav-item'), function(b){
+  b.addEventListener('click', bindScrollTo);
+});
 
-  for(i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', bindScrollTo);
-  }
-}
+[].forEach.call(document.getElementsByClassName('button'), function(b){
+  b.addEventListener('click', bindScrollTo);
+});
 
 function navigate(){
   var trigered = false;
@@ -64,12 +61,6 @@ function bindScrollTo(event) {
   event.preventDefault();
   slideTo(document.getElementById(this.hash.substr(1)));
   setTimeout(transitionEnd, 500, this.hash)
-}
-
-buttons = document.getElementsByClassName('button');
-
-for(i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', bindScrollTo);
 }
 
 // Google Analytics
