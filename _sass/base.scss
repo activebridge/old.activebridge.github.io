@@ -30,7 +30,7 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../images/slide1.jpg);
+  background: url(../images/slide1.jpg) $violet;
   background-size: cover;
 }
 
@@ -88,7 +88,7 @@ h5 {
 }
 
 .slide {
-  background: url(../images/slide-background.png) repeat #fafafa;
+  background: url($slide-bg) repeat #fafafa;
   padding: 106px 0 69px;
   background-attachment: fixed;
   width: 100%;
@@ -138,7 +138,7 @@ h5 {
 .contact-info li { margin-right: 10px; font-size: 16px; }
 
 .menu, #footer, #home, .split-slide {
-  background: url(../images/overlay-bg.png) repeat left top;
+  background: url($overlay-bg) repeat left top;
 }
 
 #footer {
@@ -195,7 +195,7 @@ ul.navigation {
     line-height: 20px;
     transition: background-position .3s;
     background-image: linear-gradient(to bottom, transparent 50%, $violet 50%);
-    background-size: 100% 200%;
+    background-size: 100% 201%;
     &:first-child { margin-left: 0; }
     &:hover, &.active {
       background-position: 0 -100%;
