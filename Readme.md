@@ -6,6 +6,13 @@ Instalation
     bundle install
     bundle exec jekyll serve -w
 
+Adding images
+-
+
+After adding or updating images generate sprites with:
+
+    ruby sprite.rb
+
 Steps to publish
 -
 
