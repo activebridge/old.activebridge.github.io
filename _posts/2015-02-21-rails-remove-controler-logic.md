@@ -36,7 +36,7 @@ def create
 end
 {% endhighlight %}
 
-It look a bit better right now. But there are still a lot of conditions. And we can use `String` interpolation to remove the conditions completely
+It looks a bit better right now. But there are still a lot of conditions. And we can use `String` interpolation to remove the conditions completely
 
 {% highlight ruby %}
 user = User.new(params[:user])
