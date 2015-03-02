@@ -5,8 +5,8 @@ layout: app
 <div class='bg'></div>
 <div id='home' class='slide'>
   <h2>Hello, we are</h2>
-  <h1>Active Bridge</h1>
-  <h2>Ruby on Rails Developers</h2>
+  <h1 itemprop='name'>Active Bridge</h1>
+  <h2 itemprop='description'>Ruby on Rails Developers</h2>
   <div class='bordered'>
     <a class='icon-down-open button' href='#about'></a>
   </div>
@@ -116,9 +116,11 @@ layout: app
     <div class='grid_12'>
       <h4>Contact Us</h4>
       <ul class='contact-info'>
-        <li class='icon icon-phone-squared'> +38 097 753 5731</li>
-        <li class='icon icon-mail-alt'> eugene@active-bridge.com</li>
-        <li class='icon icon-location'> Cherkassy, Ukraine</li>
+        <li class='icon icon-phone-squared' itemprop='telephone'> +38 097 753 5731</li>
+        <li class='icon icon-mail-alt' itemprop='email'> eugene@active-bridge.com</li>
+        <li class='icon icon-location' itemprop='address' itemscope itemtype='http://schema.org/PostalAddress'>
+          <span itemprop='addressLocality'>Cherkassy, Ukraine</span>
+        </li>
       </ul>
     </div>
   </div>
