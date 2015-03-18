@@ -1,4 +1,13 @@
+---
+layout: post
+title: Time in Rails Applications
+description: Defining time and date in Rails applications
+tags: [rails api logic, ror controllers logic]
+---
+
 # Time in Rails Applications
+-
+
 If your Application targets on region(s) with more than one time-zone, you should use server time zone.
 
 So, instead:
