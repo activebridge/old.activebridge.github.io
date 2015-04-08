@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful helpers
-description: Quick find where method define
+description: Useful unknown helpers in ROR
 tags: [rails api logic, ror helpers logic]
 ---
 
