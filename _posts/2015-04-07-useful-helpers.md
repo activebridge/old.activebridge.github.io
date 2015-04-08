@@ -2,7 +2,7 @@
 layout: post
 title: Useful helpers
 description: Quick find where method define
-tags: [rails api logic, ror views logic]
+tags: [rails api logic, ror helpers logic]
 ---
 
 Useful felpers in Ruby on Rails
