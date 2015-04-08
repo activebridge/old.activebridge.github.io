@@ -5,7 +5,7 @@ description: Quick find where method define
 tags: [rails api logic, ror helpers logic]
 ---
 
-Useful felpers in Ruby on Rails
+Useful helpers in Ruby on Rails
 -
 
 All Rails developers know helpers such as `link_to`, `mail_to` or `form_for`, but few described below helpers are unknown and used very seldom.
