@@ -8,7 +8,7 @@ tags: [rails api logic, ror helpers logic]
 Useful felpers in Ruby on Rails
 -
 
-All Rails developers know helpers such as `link_to`, `mail_to` or `form_for`, but few described below helpers.
+All Rails developers know helpers such as `link_to`, `mail_to` or `form_for`, but few described below helpers are unknown and used very seldom.
 
 So, let's start!
 
