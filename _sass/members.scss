@@ -35,12 +35,10 @@ ul.members {
     p { border-bottom: 1px solid $violet; }
     .member-img {
       img { opacity: 0; }
-      img.funny { opacity: 1; }
     }
     transition-delay: 0s;
     & svg line {
       stroke-width: 20;
-      stroke: $violet;
       transition-delay: 0.1s;
       &.top {
         transform: translateX(-270px);
@@ -62,7 +60,7 @@ ul.members {
     left: 0;
     & line {
       stroke-width: 3;
-      stroke: transparent;
+      stroke: $violet;
       fill: none;
       transition: all .3s ease-in-out;
       &.top,
@@ -95,15 +93,13 @@ ul.members {
 }
 
 .member-img {
-  img.funny {
-    opacity: 0;
-    transition: opacity .7s;
-    position: absolute;
-  }
+  background-repeat: no-repeat;
+  background-size: 100%;
   img {
     opacity: 1;
     display: block;
     position: relative;
     transition: opacity .7s;
   }
+  transition: .3s;
 }
