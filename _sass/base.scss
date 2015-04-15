@@ -28,16 +28,6 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   overflow: hidden;
 }
 
-.bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../images/slide1.jpg) $violet;
-  background-size: cover;
-}
-
 body {
   margin: 0;
   font-family: 'Tahoma', sans-serif;
@@ -45,7 +35,8 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: $gray;
-  background-color: $white;
+  background: url(//res.cloudinary.com/active-bridge/image/upload/slide1.jpg) fixed $violet;
+  background-size: cover;
   overflow-x: hidden;
 }
 

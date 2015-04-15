@@ -2,6 +2,10 @@
 
   .member {
     width: 200px;
+    .member-img img {
+      height: 200px;
+      width: 200px;
+    }
     &:hover h4 { font-size: 26px}
     & svg line {
       &.top,
@@ -34,6 +38,10 @@
 
   .member {
     width: 180px;
+    .member-img img {
+      height: 180px;
+      width: 180px;
+    }
     &:hover h4 { font-size: 24px}
     & svg line {
       &.top,
@@ -79,6 +87,10 @@
 
   .member {
     width: 100%;
+    .member-img img {
+      height: 300px;
+      width: 300px;
+    }
     &:hover h4 { font-size: 36px}
     & svg line {
       &.top,
@@ -116,6 +128,10 @@
   .bordered:before, .bordered:after { display: none; }
   .member {
     width: 100%;
+    .member-img img {
+      height: 285px;
+      width: 285px;
+    }
     &:hover { h4 { font-size: 36px;} }
     & svg line {
       &.top,
