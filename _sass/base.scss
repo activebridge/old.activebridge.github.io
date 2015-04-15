@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('../fonts/Roboto.woff') format('woff');
-}
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,700italic,400,700);
 
 html {
   overflow-x: hidden;
