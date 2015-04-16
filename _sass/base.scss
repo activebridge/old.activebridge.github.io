@@ -3,6 +3,9 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  background: url(//res.cloudinary.com/active-bridge/image/upload/slide1.jpg) no-repeat center center fixed $violet;
+  background-size: cover;
+  height: 100%;
 }
 
 html, button, input, select, textarea { font-family: sans-serif; }
@@ -28,9 +31,6 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: $gray;
-  background: url(//res.cloudinary.com/active-bridge/image/upload/slide1.jpg) no-repeat $violet;
-  background-attachment: fixed;
-  background-size: cover;
   overflow-x: hidden;
 }
 
