@@ -3,9 +3,6 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  background: url(//res.cloudinary.com/active-bridge/image/upload/slide1.jpg) no-repeat center center fixed $violet;
-  background-size: cover;
-  height: 100%;
 }
 
 html, button, input, select, textarea { font-family: sans-serif; }
@@ -32,6 +29,17 @@ body {
   line-height: 18px;
   color: $gray;
   overflow-x: hidden;
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(//res.cloudinary.com/active-bridge/image/upload/slide1.jpg) no-repeat center center $violet;
+    background-size: cover;
+    z-index: 0;
+  }
 }
 
 ::selection, ::-moz-selection { background: $violet; color: $white; }
