@@ -61,13 +61,6 @@
   careers: igorvbilan
   linkedin: igorbilan
 
-- name: Yuriy
-  id: yuriy
-  position: RoR Engineer
-  github: bilogub
-  careers: bilogub
-  linkedin: bilogub
-
 - name: Eugene Surzhko
   id: surzhko
   position: RoR Engineer
@@ -155,6 +148,13 @@
 - name: Vitaliy
   id: kovtun
   position: RoR Engineer
-  github:
-  careers:
-  linkedin:
+  github: VitaliyKovtun
+  careers: vitaliykovtun
+  linkedin: vitaliykovtun
+
+- name: Michael
+  id: ostrovskyi
+  position: RoR Engineer
+  github: abscondite
+  careers: ostrovskyi
+  linkedin: ostrovskyi
