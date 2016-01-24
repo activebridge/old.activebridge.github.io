@@ -1,0 +1,19 @@
+- name: ZOZI
+  url: http://zozi.com
+  img: zozi.jpg
+
+- name: ZOZI Advance
+  url: http://advance.zozi.com
+  img: zozi.advance.jpg
+
+- name: Toro
+  url:
+  img:
+
+- name: DaisyBill
+  url: http://www.daisybill.com
+  img:
+
+- name: DaisyBill
+  url: http://www.daisybill.com/
+  img:

@@ -1,0 +1,38 @@
+.services-block {
+  margin-left: 20px;
+  display: block;
+  border: 1px solid #ededed;
+  background: #ffffff;
+  position: relative;
+  text-align: center;
+  color: #747474;
+  font-size: 13px;
+  line-height: 22px !important;
+  margin-bottom: 35px;
+  padding: 25px 15px;
+  transition: .3s;
+  &:hover {
+    border: 1px solid $violet;
+    background: $violet;
+    color: $white;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    p { color: $white; }
+    .icon-stack .base { color: $violet; }
+    .icon-stack .border { color: $white; }
+  }
+  p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+    padding-top: 10px;
+    transition: .3s;
+    text-transform: uppercase;
+  }
+  .text {
+    width: 85%;
+    margin: 0px auto;
+    text-align: center;
+  }
+}

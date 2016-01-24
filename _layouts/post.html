@@ -1,0 +1,32 @@
+---
+layout: blog
+---
+
+<div class='post-body'>
+  <div class='icon-stack top-icon'>
+    <i class='icon-circle base border'></i>
+    <i class='icon-circle base'></i>
+    <i class='small-icon icon-code'></i>
+  </div>
+  <p>{{ content }}</p>
+</div>
+<div class='sharer'>
+  Share In:
+  <a class='icon-facebook' href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" onclick='popup(event, this)'></a>
+  <a class='icon-twitter' href="http://twitter.com/share?text={{page.title}}&url={{site.url}}{{page.url}}" onclick='popup(event, this)'></a>
+  <a class='icon-gplus' href="https://plus.google.com/share?url={{site.url}}{{page.url}}" onclick='popup(event, this)'></a>
+  <a class='icon-linkedin' href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}" onclick='popup(event, this)'></a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'activebridge';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

@@ -1,0 +1,149 @@
+---
+layout: app
+---
+
+<div id='home' class='slide'>
+  <h2>Hello, we are</h2>
+  <h1 itemprop='name'>Active Bridge</h1>
+  <h2 itemprop='description'>Ruby on Rails Developers</h2>
+  <div class='bordered'>
+    <a class='icon-down-open button' href='#about'></a>
+  </div>
+</div>
+
+<div class='menu' id='navigation'>
+  <ul class='navigation' id='nav'>
+    <li>
+      <a class='nav-item icon-home' href='#home'>
+        <span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-book' href='#about'>
+        <span>About</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-cog-alt' href='#services'>
+        <span>Services</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-users' href='#team'>
+        <span>Team</span>
+      </a>
+    </li>
+    <li>
+      <a class='nav-item icon-vcard' href='#contacts'>
+        <span>Contacts</span>
+      </a>
+    </li>
+    <li>
+      <a href='/blog' class='icon-feather'>
+        <span>Blog</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<section id='about' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=0 %}
+    <div class='grid_8'>
+      <h4>Why Active Bridge?</h4>
+      <p>
+        We never stop improving our services, including development methodologies,
+        engineering practices and management techniques to enhance our team’s capabilities and increase customer satisfaction.
+      </p>
+      <ul class='about-list'>
+        {% for property in site.data.properties %}
+        <li>
+          <i class='fontawesome-icon icon-ok'></i>
+          {{ property.text }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='grid_4 omega'>
+      <h4>Our Skills</h4>
+      <ul id='skills'>
+        {% for skill in site.data.skills %}
+        <li>{{ skill.title }}</li>
+        <li class='progress'>
+          <div class='bar' style="width: {{ skill.value }}%">
+            <b>{{ skill.value }}</b>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include spliter.html slide="#about" %}
+
+<section id='services' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=1 %}
+
+    {% for service in site.data.services %}
+      {% include service.html service=service %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include spliter.html slide="#services" %}
+
+<section id='team' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=2 %}
+
+    <ul class='members'>
+      {% assign members = site.data.members | sort:"priority" %}
+      {% for member in members %}
+      {% include member.html member=member %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include spliter.html slide="#team" %}
+
+<section id='contacts' class='slide'>
+  <div class='container clearfix'>
+    {% include slide.html slide=3 %}
+    <h4>Contact Us</h4>
+    <!-- Do not change the code! -->
+    <div class='grid_6 omega'>
+      <a id="foxyform_embed_link_671069" href="http://www.foxyform.com/">foxyform</a>
+      <script type="text/javascript">
+        (function(d, t){
+          var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+          g.src = "http://www.foxyform.com/js.php?id=671069&sec_hash=f2bca94bb6f&width=340px";
+          s.parentNode.insertBefore(g, s);
+        }(document, "script"));
+      </script>
+      <!-- Do not change the code! -->
+    </div>
+    <div class='grid_6'>
+      <ul class='contact-info'>
+        <li itemprop='telephone'>
+          <a class='icon icon-phone-squared' href='tel:+380977535731'>
+            +38 097 753 5731
+          </a>
+        </li>
+        <li itemprop='email'>
+          <a class='icon icon-mail-alt' href='mailto:eugene@active-bridge.com?subject=I am interested in you'>
+            eugene@active-bridge.com
+          </a>
+        </li>
+        <li itemprop='address' itemscope itemtype='http://schema.org/PostalAddress'>
+          <a class='icon icon-location' itemprop='addressLocality' target='_blank' href="https://www.google.com/maps/place/Marshala+Krasovs'koho+St,+8,+Cherkasy,+Cherkas'ka+oblast,+Ukraine/@44.6228353,29.6920978,5z/data=!4m2!3m1!1s0x40d14b8febf9aa21:0xe43a326d1c2451c2">
+            Cherkassy, Ukraine
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

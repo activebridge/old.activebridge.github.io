@@ -1,0 +1,16 @@
+exclude: ['Readme.md']
+permalink: pretty
+baseurl: ''
+url: 'http://www.active-bridge.com'
+sass:
+  style: :compressed
+gems:
+- jekyll-sitemap
+
+title: Active Bridge - ruby on rails development company
+description:
+  Active Bridge is a dedicated Ruby on Rails development team,
+  focused on full project service for building high qualified custom web applications in short time
+keywords:
+  ruby on rails developers ukraine,ruby on rails team ukraine,agile Ruby development, ruby on rails web design, ROR consultant,
+  rails development company,web development company, web application development, mobile development

@@ -1,0 +1,19 @@
+---
+layout: blog
+---
+
+<ul class='posts'>
+  {% for post in site.posts %}
+  <li class='grid_12'>
+    <a class='post-body' href="{{ post.url }}">
+      <div class='icon-stack top-icon'>
+        <i class='icon-circle base border'></i>
+        <i class='icon-circle base'></i>
+        <i class='small-icon icon-code'></i>
+      </div>
+      <h4>{{ post.title }}</h4>
+      <div class='text'>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,180 @@
+- name: Eugene
+  id: jeka
+  position: CEO
+  github: eugenekorpan
+  careers: eugenekorpan
+  linkedin: eugenekorpan
+  priority: 1
+
+- name: Alex
+  id: alex
+  position: Director of Engineering
+  github: galulex
+  careers: galulex
+  linkedin: galulex
+  priority: 3
+
+- name: Dasha
+  id: dasha
+  position: SEO/SMM
+  github: daryakuritsyna
+  careers: DaryaKuritsyna
+  linkedin: daryakuritsyna
+  priority: 9
+
+- name: Alex
+  id: marchenko
+  position: Chief Accountant
+  priority: 2
+
+- name: Alexey
+  id: alexey
+  position: Lead RoR Engineer
+  github: Alexey-Lukin
+  careers: alexeylukin
+  linkedin: lukinalexey
+  priority: 4
+
+- name: Pasha
+  id: pasha
+  position: RoR Engineer
+  github: pavel-mihailovskiy
+  careers: pavelmihailovskiy
+  linkedin: pavelmihailovskiy
+  priority: 5
+
+- name: Anton
+  id: anton
+  position: RoR Engineer
+  github: antonzimin
+  careers: zimin
+  linkedin: antonzimin
+  priority: 6
+
+- name: Ruslan
+  id: ruslan
+  position: RoR Engineer
+  github: rpmilevskiy
+  careers: ruslanm
+  linkedin: ruslanmilevskiy
+  priority: 8
+
+- name: Igor
+  id: igor
+  position: RoR Engineer
+  github: igorb
+  careers: igorvbilan
+  linkedin: igorbilan
+  priority: 11
+
+- name: Eugene
+  id: surzhko
+  position: RoR Engineer
+  github: Surzhko
+  careers: eugenesurzhko
+  linkedin: eugenesurzhko
+  priority: 16
+
+- name: Alexey
+  id: verbaleks
+  position: RoR Engineer
+  github: verbaleks
+  careers: alexeyverbivskyy
+  linkedin: verbaleks
+  priority: 10
+
+- name: Alex
+  id: stadnik
+  position: RoR Engineer
+  github: stadniklksndr
+  careers: stadniklksndr
+  linkedin: stadniklksndr
+  priority:  21
+
+- name: Oleg
+  id: voloshyn
+  position: RoR Engineer
+  github: oleg-voloshyn
+  careers: voloshyn
+  linkedin: olegvoloshyn
+  priority: 15
+
+- name: Vova
+  id: vova
+  position: RoR Engineer
+  github: vovap
+  careers: volodimirp
+  linkedin: vovap
+  priority: 20
+
+- name: Oleg
+  id: olegsobchuk
+  position: RoR Engineer
+  github: olegsobchuk
+  careers: olegsobchuk
+  linkedin: olegsobchuk
+  priority: 13
+
+- name: Dmitriy
+  id: dmitriy
+  position: RoR Engineer
+  github: DeeMak13
+  careers: makodzeba
+  linkedin: makodzeba
+  priority: 12
+
+- name: Vitaliy
+  id: vitaliy
+  position: RoR Engineer
+  github: Vitaliy-Bondarenko
+  careers: bondarenkovitaliy
+  linkedin: bondarenkovitaliy
+  priority: 14
+
+- name: Victor
+  id: victor
+  position: RoR Developer
+  github: victir
+  careers: victir
+  linkedin: victir
+  priority: 17
+
+- name: Sergiy
+  id: naumenko
+  position: RoR Developer
+  github: NaumenkoSergiy
+  careers: s.naumenko
+  linkedin: snaumenko
+  priority: 18
+
+- name: Alex
+  id: tsibulko
+  position: RoR Developer
+  github: bruceliator
+  careers: alexTsibulko
+  linkedin: tsibulko
+  priority: 23
+
+- name: Vitaliy
+  id: kovtun
+  position: RoR Developer
+  github: VitaliyKovtun
+  careers: vitaliykovtun
+  linkedin: vitaliykovtun
+  priority: 25
+
+- name: Michael
+  id: ostrovskyi
+  position: RoR Developer
+  github: abscondite
+  careers: ostrovskyi
+  linkedin: ostrovskyi
+  priority: 24
+
+- name: Ilya
+  id: ilya
+  position: RoR Developer
+  github: IlyaUmanets
+  careers:
+  linkedin: ilyaumanets
+  priority: 29

@@ -1,0 +1,21 @@
+<li class="member">
+  <div class="member-img {{ include.member.id }}">
+    <img src='//res.cloudinary.com/active-bridge/image/upload/spacer.png', alt="Active Bridge, LLC - {{ include.member.position }} - {{ include.member.name }}"/>
+  </div>
+  <div class='name'>{{ include.member.name }}</div>
+  <p>{{ include.member.position }}</p>
+  <div class='member-icons'>
+    <a class='icon-stack' href="http://careers.stackoverflow.com/{{ include.member.careers }}" target="_blank">
+      <i class='icon-circle base'></i>
+      <i class='icon-stackoverflow'></i>
+    </a>
+    <a class='icon-stack' href="https://github.com/{{ include.member.github }}" target="_blank">
+      <i class='icon-circle base'></i>
+      <i class='icon-github'></i>
+    </a>
+    <a class='icon-stack' href="http://ua.linkedin.com/in/{{ include.member.linkedin }}" target="_blank">
+      <i class='icon-circle base'></i>
+      <i class='icon-linkedin'></i>
+    </a>
+  </div>
+</li>
