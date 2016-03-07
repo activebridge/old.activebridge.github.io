@@ -9,16 +9,7 @@ slides    = document.getElementsByClassName('slide');
 if (menu) var links = menu.getElementsByTagName('li');
 if (nav) {
   var position = nav.offsetTop;
-
   window.onscroll = navigate;
-
-  [].forEach.call(menu.getElementsByClassName('nav-item'), function(b){
-    b.addEventListener('click', bindScrollTo);
-  });
-
-  [].forEach.call(document.getElementsByClassName('button'), function(b){
-    b.addEventListener('click', bindScrollTo);
-  });
 }
 
 function navigate(){
@@ -43,30 +34,6 @@ function navigate(){
     fixed = false;
     nav.classList.remove('fixed');
   }
-}
-
-function slideTo(el){
-  var to = el ? el.offsetTop : 0,
-  from = window.scrollY,
-  dy = to-from;
-
-  body.style.marginTop = dy+'px';
-  window.scrollTo(0, to);
-
-  body.style.transition = 'margin-top 0.5s ease-in-out';
-  body.style.marginTop = 0;
-}
-
-function transitionEnd(hash) {
-  location.hash = hash
-  body.style.transition = 'none';
-  navigate();
-}
-
-function bindScrollTo(event) {
-  event.preventDefault();
-  slideTo(document.getElementById(this.hash.substr(1)));
-  setTimeout(transitionEnd, 500, this.hash)
 }
 
 function popup(event, e) {
