@@ -1,6 +1,6 @@
 - name: Eugene
   id: jeka
-  position: CEO
+  position: CSO/Lead RoR Developer
   github: eugenekorpan
   careers: eugenekorpan
   linkedin: eugenekorpan
@@ -8,7 +8,7 @@
 
 - name: Alex
   id: alex
-  position: Director of Engineering
+  position: CEO/Lead RoR Developer
   github: galulex
   careers: galulex
   linkedin: galulex
@@ -83,14 +83,6 @@
   linkedin: verbaleks
   priority: 10
 
-- name: Alex
-  id: stadnik
-  position: RoR Engineer
-  github: stadniklksndr
-  careers: stadniklksndr
-  linkedin: stadniklksndr
-  priority:  21
-
 - name: Oleg
   id: voloshyn
   position: RoR Engineer
@@ -106,14 +98,6 @@
   careers: volodimirp
   linkedin: vovap
   priority: 20
-
-- name: Oleg
-  id: olegsobchuk
-  position: RoR Engineer
-  github: olegsobchuk
-  careers: olegsobchuk
-  linkedin: olegsobchuk
-  priority: 13
 
 - name: Dmitriy
   id: dmitriy
@@ -171,10 +155,84 @@
   linkedin: ostrovskyi
   priority: 24
 
-- name: Ilya
-  id: ilya
+- name: Alex
+  id: alex-pro
   position: RoR Developer
-  github: IlyaUmanets
+  github: alex-pro
   careers:
-  linkedin: ilyaumanets
+  linkedin:
+  priority: 25
+
+- name: Alex
+  id: shmatko
+  position: RoR Developer
+  github: AlexShmatko
+  careers:
+  linkedin:
+  priority: 26
+
+- name: Nastya
+  id: bobrova
+  position: RoR Developer
+  github: cornixxx
+  careers:
+  linkedin:
+  priority: 27
+
+- name: Maxim
+  id: maxim
+  position: RoR Developer
+  github: maximsilver
+  careers:
+  linkedin:
+  priority: 28
+
+- name: Dmitriy
+  id: demon
+  position: RoR Developer
+  github: NovitskyiDA
+  careers:
+  linkedin:
   priority: 29
+
+- name: Nikita
+  id: nik
+  position: RoR Developer
+  github: qqumn
+  careers:
+  linkedin:
+  priority: 30
+
+- name: Vlad
+  id: vlad
+  position: RoR Developer
+  github: TupickiyV
+  careers:
+  linkedin:
+  priority: 31
+
+- name: Vova
+  id: vovakovtun
+  position: RoR Developer
+  github: wilkrof
+  careers:
+  linkedin:
+  priority: 32
+
+- name: Yaroslav
+  id: yarik
+  position: RoR Developer
+  github: YaroslavTupitskyi
+  careers:
+  linkedin:
+  priority: 33
+
+
+
+
+
+
+
+
+
+
