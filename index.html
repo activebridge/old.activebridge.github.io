@@ -112,20 +112,18 @@ layout: app
 <section id='contacts' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=3 %}
-    <h4>Contact Us</h4>
-    <!-- Do not change the code! -->
-    <div class='grid_6 omega'>
-      <a id="foxyform_embed_link_671069" href="http://www.foxyform.com/">foxyform</a>
-      <script type="text/javascript">
-        (function(d, t){
-          var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-          g.src = "http://www.foxyform.com/js.php?id=671069&sec_hash=f2bca94bb6f&width=340px";
-          s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-      </script>
-      <!-- Do not change the code! -->
-    </div>
+    <form class='grid_6 omega' action="https://active-bridge.com/contact" method="post" accept-charset="utf-8" onsubmit="document.getElementById('send').disabled = true">
+      <fieldset>
+        <legend>Get Free Consultation</legend>
+        <label for="name">Name</label>
+        <input type="text" name="contact[name]" id="name" placeholder='Chuck Norris'/>
+        <label for="email">Email</label>
+        <input type="email" name="contact[email]" id="email" placeholder='your@mail.com' required/>
+        <label for="message">Messsage</label>
+        <textarea name="contact[message]" rows="5" placeholder='How is it going?' id='message' required></textarea>
+        <button id='send' type="submit">SEND</button>
+      </fieldset>
+    </form>
     <div class='grid_6'>
       <ul class='contact-info'>
         <li itemprop='telephone'>
@@ -134,8 +132,8 @@ layout: app
           </a>
         </li>
         <li itemprop='email'>
-          <a class='icon icon-mail-alt' href='mailto:eugene@active-bridge.com?subject=I am interested in you'>
-            eugene@active-bridge.com
+          <a class='icon icon-mail-alt' href='mailto:contact@active-bridge.com?subject=I am interested in you'>
+            contact@active-bridge.com
           </a>
         </li>
         <li itemprop='address' itemscope itemtype='http://schema.org/PostalAddress'>

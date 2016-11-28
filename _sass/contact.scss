@@ -1,0 +1,46 @@
+label {
+  display: block;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+legend {
+  font-size: 2rem;
+}
+
+input, textarea {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid $gray;
+  padding: 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border-radius: 5px;
+  padding: 5%;
+  box-sizing: border-box;
+  border: 1px solid $gray;
+}
+
+button {
+  padding: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  background: $violet;
+  border: 1px solid $black;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
