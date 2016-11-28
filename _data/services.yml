@@ -4,15 +4,15 @@
     Web development is based on <b>Ruby on Rails</b> technology.  Having a lot of experience and broad
     knowledge we deliver software so that you have it on time and that it fits best to project's requirements
 
-- title: Ruby On Rails Code Audit
+- title: Free Code Audit
   icon: chart-bar
   text: >
-    We provide our clients with very careful and solid process of auditing <b>Ruby on Rails</b> Code.
-    We can be your another set of eyes and deliver you necessary feedback at every stage of your project.
-
+    We implement this engineering practice in terms of <b>agile development methodology</b>.
+    Main goal code review is to identify differences in code writing style according to <b>Ruby style guide</b>.
+    To provide this convention we use rubocob gem and make the description of problem-solving in a short time.
 - title: Maintenance & Support
   icon: gauge
   class: omega
   text: >
-    <b>Active Bridge</b> helps software providers meet the challenge of ongoing software maintenance and support
-    with a range of services designed to substantially lower their maintenance costs and ensure timely response.
+    We offer web development project management, maintenance, and support services to achieve your
+    business needs.Our team keeps this process strong with <b>regular checkups</b> and <b>web analytic tools</b>.
