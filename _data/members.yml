@@ -227,6 +227,47 @@
   linkedin:
   priority: 33
 
+- name: Andrew
+  id: andrew
+  position: RoR Developer
+  github: AndriyPedan
+  careers:
+  linkedin:
+  priority: 34
+
+- name: Nastya
+  id: andreeva
+  position: Office Manager
+  github:
+  careers:
+  linkedin:
+  priority: 35
+
+- name: Misha
+  id: misan
+  position: Office Manager
+  github:
+  careers:
+  linkedin:
+  priority: 36
+
+- name: Liza
+  id: liza
+  position: Designer
+  github:
+  careers:
+  linkedin:
+  priority: 37
+
+- name: Kirill
+  id: kirill
+  position: RoRDeveloper
+  github:
+  careers:
+  linkedin:
+  priority: 38
+
+
 
 
 
