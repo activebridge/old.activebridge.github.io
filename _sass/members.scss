@@ -35,8 +35,8 @@ ul.members {
       font-size: 28px;
     }
     p { border-bottom: 1px solid $violet; }
-    .member-img {
-      img { opacity: 0; }
+    .member-img:after {
+      opacity: 0;
     }
     transition-delay: 0s;
   }
@@ -63,12 +63,24 @@ ul.members {
 .member-img {
   background-repeat: no-repeat;
   background-size: 100%;
-  img {
-    opacity: 1;
+  position: relative;
+  transition: .3s;
+  margin: 0;
+
+  &:before {
+    content: '';
     display: block;
-    position: relative;
+    padding-top: 100%;
+  }
+
+  &:after {
+    opacity: 1;
+    content: '';
+    display: block;
     transition: opacity .7s;
     width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
   }
-  transition: .3s;
 }
