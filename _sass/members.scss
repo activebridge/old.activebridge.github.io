@@ -3,9 +3,9 @@ ul.members {
 }
 
 .member {
-  margin: 0 10px 20px 10px;
+  margin: 0 5px 20px 5px;
   display: inline-block;
-  width: 220px;
+  width: 150px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
   text-align: center;
   background: $white;
@@ -35,8 +35,8 @@ ul.members {
       font-size: 28px;
     }
     p { border-bottom: 1px solid $violet; }
-    .member-img {
-      img { opacity: 0; }
+    .member-img:after {
+      opacity: 0;
     }
     transition-delay: 0s;
   }
@@ -47,14 +47,15 @@ ul.members {
     color: $white;
     font-size: 24px;
     transition: .3s;
+    background: $gray;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    transition: background .3s, transform .3s;
     &:hover {
       transform: rotate(360deg);
-      .base { color: $violet; }
-    }
-    .base {
-      font-size: 44px;
-      color: $gray;
-      transition: .3s;
+      background: $violet;
     }
   }
 }
@@ -62,13 +63,24 @@ ul.members {
 .member-img {
   background-repeat: no-repeat;
   background-size: 100%;
-  img {
-    opacity: 1;
-    display: block;
-    position: relative;
-    transition: opacity .7s;
-    width: 220px;
-    height: 220px;
-  }
+  position: relative;
   transition: .3s;
+  margin: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  &:after {
+    opacity: 1;
+    content: '';
+    display: block;
+    transition: opacity .7s;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
 }
