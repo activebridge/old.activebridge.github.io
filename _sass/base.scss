@@ -334,11 +334,13 @@ ul.about-list li {
   top: -40px;
   left: 50%;
   margin-left: -36px;
+  padding: 25px;
+  background: $black;
+  border-radius: 50%;
   font-size: 30px;
   color: $white;
-  .base, .small-icon {
-    transition: .3s;
-  }
+  border: 5px solid $black;
+  transition: border-color .3s, background .3s;
   .base {
     padding: 5px;
     font-size: 74px;

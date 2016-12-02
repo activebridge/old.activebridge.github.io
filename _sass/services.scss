@@ -18,8 +18,10 @@
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     p { color: $white; }
-    .icon-stack .base { color: $violet; }
-    .icon-stack .border { color: $white; }
+    .top-icon {
+      background: $violet;
+      border-color: #fafafa;
+    }
   }
   p {
     font-family: 'Roboto Condensed', sans-serif;
