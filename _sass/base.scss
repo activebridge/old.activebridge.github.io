@@ -133,7 +133,7 @@ h5 {
 .contact-info li { margin-right: 10px; font-size: 16px; }
 
 .menu, #footer, #home, .split-slide {
-  background: url($overlay-bg) repeat left top;
+  background: $overlay;
 }
 
 #footer {
