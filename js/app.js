@@ -47,7 +47,7 @@ function popup(event, e) {
 // Google Analytics
 
  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-88314109-1']);
+  _gaq.push(['_setAccount', 'UA-50401698-2']);
   _gaq.push(['_trackPageview']);
   setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])",15000);
 
