@@ -120,7 +120,8 @@ layout: app
 <section id='contacts' class='slide'>
   <div class='container clearfix'>
     {% include slide.html slide=3 %}
-    <form class='grid_6 omega' action="https://active-bridge.com/contact" method="post" accept-charset="utf-8" onsubmit="document.getElementById('send').disabled = true">
+    <form class='grid_6 omega' action="https://active-bridge.com/contact" method="post" accept-charset="utf-8" onsubmit="document.getElementById('send').disabled = true; ga('send', 'event', 'form', 'submit')">
+
       <fieldset>
         <legend>Get Free Consultation</legend>
         <label for="name">Name</label>
@@ -140,8 +141,8 @@ layout: app
           </a>
         </li>
         <li itemprop='email'>
-          <a class='icon icon-mail-alt' href='mailto:contact@active-bridge.com?subject=I am interested in you'>
-            contact@active-bridge.com
+          <a class='icon icon-mail-alt' href='mailto:contact@active-bridge.com?subject=I am interested in you'
+            > contact@active-bridge.com
           </a>
         </li>
         <li itemprop='address' itemscope itemtype='http://schema.org/PostalAddress'>
