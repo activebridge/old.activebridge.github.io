@@ -57,6 +57,13 @@ function popup(event, e) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='//rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'b25855cd5b85e6e4016b25845cd50e5da30b684a');
+
 // Fonts
 WebFontConfig = {
   google: { families: [ 'Roboto+Condensed:400italic,700italic,400,700:latin' ] }
