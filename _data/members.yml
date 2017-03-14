@@ -118,9 +118,9 @@
 - name: Victor
   id: victor
   position: RoR Developer
-  github: victir
-  careers: victir
-  linkedin: victir
+  github: viktor-shmigol
+  careers: viktor-shmigol
+  linkedin: viktor-shmigol
   priority: 17
 
 - name: Sergiy
@@ -266,14 +266,3 @@
   careers:
   linkedin:
   priority: 38
-
-
-
-
-
-
-
-
-
-
-
