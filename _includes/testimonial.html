@@ -1,0 +1,15 @@
+<input autofocus="" checked="" id="testimonial_{{ include.testimonial.company.underscore }}" name="active-testimonial" onblur="keepFocus(this)" type="radio">
+<div class="testimonial testimonial {{ include.testimonial.company.underscore }}">
+  <div class="arrows">
+    <label for="testimonial_joseph_carpenter">
+      <i class="arrow" id="left">
+        <
+      </i>
+    </label>
+    <label for="testimonial_def_method">
+      <i class="arrow" id="right">
+        >
+      </i>
+    </label>
+</div>
+<div class="testimonial-logo"><img src="{{ include.testimonial.logo }}"/></div>
