@@ -34,6 +34,11 @@ layout: app
       </a>
     </li>
     <li>
+      <a class='nav-item icon-users' href='#testimonials'>
+        <span>Testimonials</span>
+      </a>
+    </li>
+    <li>
       <a class='nav-item icon-vcard' href='#contacts'>
         <span>Contacts</span>
       </a>
@@ -117,9 +122,21 @@ layout: app
 
 {% include spliter.html slide="#team" %}
 
+<section id='testimonials' class='slide'>
+  <div class='container testimonials clearfix'>
+    {% include slide.html slide=3 %}
+    {% assign testimonials = site.data.testimonials %}
+    {% for testimonial in testimonials %}
+    {% include testimonial.html testimonial=testimonial  %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include spliter.html slide="#testimonials" %}
+
 <section id='contacts' class='slide'>
   <div class='container clearfix'>
-    {% include slide.html slide=3 %}
+    {% include slide.html slide=4 %}
     <form class='grid_6 omega' action="https://active-bridge.com/contact" method="post" accept-charset="utf-8" onsubmit="document.getElementById('send').disabled = true; ga('send', 'event', 'form', 'submit')">
 
       <fieldset>
@@ -141,8 +158,7 @@ layout: app
           </a>
         </li>
         <li itemprop='email'>
-          <a class='icon icon-mail-alt' href='mailto:contact@active-bridge.com?subject=I am interested in you'
-            > contact@active-bridge.com
+          <a class='icon icon-mail-alt' href='mailto:contact@active-bridge.com?subject=I am interested in you'>contact@active-bridge.com
           </a>
         </li>
         <li itemprop='address' itemscope itemtype='http://schema.org/PostalAddress'>
